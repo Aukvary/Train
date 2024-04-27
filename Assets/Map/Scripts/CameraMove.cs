@@ -7,7 +7,8 @@ public class CameraMovement : MonoBehaviour
     private InputAction movement;
     private Transform cameraTransform;
 
-    
+    [SerializeField] Camera camera;
+
     [SerializeField]
     private float maxSpeed = 5f;
     private float speed;
@@ -78,6 +79,10 @@ public class CameraMovement : MonoBehaviour
     {
         GetKeyboardMovement();
 
+        CheckMouseAtScreenEdge();
+
+        DragCamera();
+
         UpdateVelocity();
         UpdateBasePosition();
     }
@@ -125,5 +130,43 @@ public class CameraMovement : MonoBehaviour
         }
 
         targetPosition = Vector3.zero;
+    }
+
+    private void CheckMouseAtScreenEdge()
+    {
+        Vector2 mousePosition = Mouse.current.position.ReadValue();
+        Vector3 moveDirection = Vector3.zero;
+
+        if (mousePosition.x < edgeTolerance * Screen.width)
+            moveDirection += -GetCameraRight();
+        else if(mousePosition.x > (1f - edgeTolerance) * Screen.width)
+            moveDirection += GetCameraRight();
+
+        if (mousePosition.y < edgeTolerance * Screen.height)
+            moveDirection += -GetCameraForward();
+        else if (mousePosition.y > (1f - edgeTolerance) * Screen.height)
+            moveDirection += GetCameraForward();
+
+        targetPosition += moveDirection;
+    } 
+
+    private void DragCamera()
+    {
+        if (!Mouse.current.rightButton.isPressed)
+            return;
+
+        Plane plane = new Plane(Vector3.up, Vector3.zero);
+
+        Ray ray = camera.ScreenPointToRay(Mouse.current.position.ReadValue());
+
+        if(plane.Raycast(ray, out float distance))
+        {
+            if (Mouse.current.rightButton.wasPressedThisFrame)
+                startDrag = ray.GetPoint(distance);
+            else
+            {
+                targetPosition += startDrag - ray.GetPoint(distance);
+            }
+        }
     }
 }
