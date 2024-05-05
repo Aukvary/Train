@@ -1,0 +1,20 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: a02b63869437bb544a03e151347c4766, type: 3}
+  m_Name: ManWithPistol
+  m_EditorClassIdentifier: 
+  _title: ManWithPistol
+  _cost: 0
+  _rarity: 0
+  _cardSprite: {fileID: 21300000, guid: 39138910a67de6f4db85eeeb23b6fe18, type: 3}
+  _cardView: {fileID: 11400000, guid: fed795d5ed261854caa0f29c974d776d, type: 2}
+  _unitStats: {fileID: 4988401502179196146, guid: 53ea89b2ffa7236438fb82ea4aae90b0, type: 3}

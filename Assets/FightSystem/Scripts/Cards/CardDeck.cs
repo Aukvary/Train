@@ -35,7 +35,9 @@ public class CardDeck
     public static CardDeck GetNewDeck(bool resetDeck = false)
     {
         var deck = new CardDeck();
-        deck.AddCardToDeck(Resources.Load<Card>("Cards/TestCard"));
+
+        foreach(Card card in Resources.LoadAll<Card>("Cards"))
+            deck.AddCardToDeck(card);
 
         if(resetDeck)
             PlayerPrefs.SetString(nameof(CardDeck), deck.ToString());
@@ -57,7 +59,7 @@ public class CardDeck
 
     public void AddCardToDeck(Card card)
     {
-        _cardsInPool[card.Rarity.CardRarity].Add(card);
+        _cardsInPool[card.Rarity].Add(card);
     }
 
     public override string ToString()

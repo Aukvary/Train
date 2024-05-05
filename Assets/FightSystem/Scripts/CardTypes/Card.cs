@@ -1,20 +1,20 @@
+using System.Collections.Generic;
 using UnityEngine;
 
 [CreateAssetMenu(fileName = "Cards", menuName = "Cards/Card", order = 1)]
 public class Card : ScriptableObject
 {
     [SerializeField] private string _title;
+    [SerializeField] private int _cost;
     [SerializeField] private CardRarityTitles _rarity;
     [SerializeField] private Sprite _cardSprite;
     [SerializeField] private CardView _cardView;
 
     [SerializeField] private UnitStats _unitStats;
 
-
-    private CardRaritySettings _raritySettings;
-
+    public int Cost => _cost;
     public string Title => _title;
-    public CardRaritySettings Rarity => _raritySettings;
+    public CardRarityTitles Rarity => _rarity;
     public Sprite Sprite => _cardSprite;
 
     public UnitStats Unit => _unitStats;
@@ -25,14 +25,12 @@ public class Card : ScriptableObject
     public Material Material => _cardView.Material;
     public Color Color => _cardView.Color;
 
-    public void Spawn(Vector3 position)
+    public void Spawn(Vector3 position, Teams team, List<Transform> targets)
     {
-        Instantiate(_unitStats.gameObject, position + Vector3.up, Quaternion.identity);
-    }
+        UnitStats unit = Instantiate(_unitStats, position, Quaternion.identity);
+        unit.Team = team;
 
-
-    private void Awake()
-    {
-        _raritySettings = new CardRaritySettings(_rarity);
+        var controller = unit.GetComponent<MovementController>();
+        controller.SetTargets(targets[0], (targets[1], targets[2]));
     }
 }
