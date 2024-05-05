@@ -8,17 +8,17 @@ public class UnitStats : MonoBehaviour
 
     private Dictionary<Type, Buff> _buffs;
 
-    public float health
+    public float Health
     {
-        get => _heath.score;
+        get => _heath.Score;
 
         set
         {
-            _heath.score = value;
+            _heath.Score = value;
         }
     }
 
-    public float damage
+    public float Damage
     {
         get;
         set;

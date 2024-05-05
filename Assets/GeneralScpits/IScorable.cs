@@ -1,8 +1,8 @@
-public interface IScorable
+public interface IScorable<T>
 {
-    float score { get; set; }
+    T Score { get; set; }
 
-    void Add(float score);
+    void AddScore(T score);
 
-    void Remove(float score);
+    void RemoveScore(T score);
 }

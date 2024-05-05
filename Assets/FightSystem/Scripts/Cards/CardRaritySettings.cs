@@ -1,4 +1,5 @@
 using System;
+using Unity.Mathematics;
 using UnityEngine;
 
 
@@ -12,14 +13,14 @@ public class CardRaritySettings
         _rarity = title;
     }
 
-    public CardRarityTitles cardRarity => _rarity;
-    public int rarityID => (int)cardRarity;
+    public CardRarityTitles CardRarity => _rarity;
+    public int RrarityID => (int)CardRarity;
 
-    public Color rarityColor
+    public Color RarityColor
     {
         get
         {
-            return cardRarity switch
+            return CardRarity switch
             {
                 CardRarityTitles.common => Color.white,
                 CardRarityTitles.rarity => Color.blue,

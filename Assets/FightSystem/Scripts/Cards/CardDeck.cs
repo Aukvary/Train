@@ -1,54 +1,67 @@
 using System;
 using System.Collections.Generic;
+using UnityEngine;
+
+using Random = UnityEngine.Random;
 
 [Serializable]
 public class CardDeck
 {
-    private Dictionary<CardRarityTitles, List<UnitCard>> _cardsInPool;
+    private Dictionary<CardRarityTitles, List<Card>> _cardsInPool;
 
-    [NonSerialized]
-    private List<UnitCard> _cardsOnTable;
-
-    public CardDeck()
-    {
-        _cardsInPool = new Dictionary<CardRarityTitles, List<UnitCard>>();
-        _cardsOnTable = new List<UnitCard>();
-    }
-
-    public int count => _cardsInPool.Count;
-
-    public IEnumerable<UnitCard> this[CardRarityTitles rarity]
+    public IEnumerable<Card> this[CardRarityTitles rarity]
     {
         get
         {
-            List<UnitCard> cards;
-            if(_cardsInPool.TryGetValue(rarity, out cards))
-            {
+            List<Card> cards;
+
+            if (_cardsInPool.TryGetValue(rarity, out cards))
                 return cards;
-            }
 
             return null;
         }
     }
 
-
-    public UnitCard GetRandomCard()
+    private CardDeck()
     {
-        return null;
-    }
-
-    public UnitCard GetCardOfRarity(CardRarityTitles rarity)
-    {
-        return null;
-    }
-
-    public void Reset()
-    {
-        foreach (UnitCard card in _cardsOnTable)
+        _cardsInPool = new Dictionary<CardRarityTitles, List<Card>>
         {
-            _cardsInPool[card.rarity].Add(card);
-        }
+            { CardRarityTitles.common, new List<Card>() },
+            { CardRarityTitles.rarity, new List<Card>() },
+            { CardRarityTitles.legendary, new List<Card>() }
+        };
+    }
 
-        _cardsOnTable.Clear();
+    public static CardDeck GetNewDeck(bool resetDeck = false)
+    {
+        var deck = new CardDeck();
+        deck.AddCardToDeck(Resources.Load<Card>("Cards/TestCard"));
+
+        if(resetDeck)
+            PlayerPrefs.SetString(nameof(CardDeck), deck.ToString());
+
+        return deck;
+    }
+
+    public Card GetRandomCard()
+    {
+        var cardType = (CardRarityTitles)Random.Range(0, 3);
+
+        if (_cardsInPool[cardType].Count == 0)
+            return GetRandomCard();
+
+        int index = Random.Range(0, _cardsInPool[cardType].Count);
+
+        return _cardsInPool[cardType][index];
+    }
+
+    public void AddCardToDeck(Card card)
+    {
+        _cardsInPool[card.Rarity.CardRarity].Add(card);
+    }
+
+    public override string ToString()
+    {
+        return JsonUtility.ToJson(this);
     }
 }

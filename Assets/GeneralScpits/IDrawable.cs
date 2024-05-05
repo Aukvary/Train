@@ -1,6 +1,6 @@
 public interface IDrawable
 {
-    bool visible { get; set; }
+    bool Visible { get; }
 
     void Draw();
 }
