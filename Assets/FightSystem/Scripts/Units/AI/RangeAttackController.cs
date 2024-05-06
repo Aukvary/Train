@@ -6,8 +6,6 @@ public class RangeAttackController : AttackController
 {
     [SerializeField] private Bullet _bullet;
 
-    public event Action<GameObject> OnAttack;
-
     protected override void Attack()
     {
         if (Target == null)
@@ -25,11 +23,13 @@ public class RangeAttackController : AttackController
     private IEnumerator Shoot(Vector3 target)
     {
         yield return new WaitForSeconds(CalculateTime(target));
-        var health = Target.GetComponent<PlayerHealth>();
-        if (health != null)
+        if (Target != null)
         {
-            health.Damage(Damege, gameObject);
-            OnAttack?.Invoke(health.gameObject);
+            var health = Target.GetComponent<PlayerHealth>();
+            if (health != null)
+            {
+                health.Damage(Damege, gameObject);
+            }
         }
     }
 }

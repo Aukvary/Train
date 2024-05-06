@@ -1,19 +1,18 @@
 using System.Collections;
 using UnityEngine;
 
-[RequireComponent(typeof(UnitStats))]
 public abstract class AttackController : MonoBehaviour
 {
-    [SerializeField, Min(0)] private float _damege;
+    [SerializeField, Min(0)] private float _damage;
     [SerializeField, Min(0)] private float _delay;
     [SerializeField, Min(0)] private float _range;
 
-    private MovementController _controller;
+    private TargetFinder _targetFinder;
 
     public float Damege
     {
-        get => _damege;
-        set => _damege = value;
+        get => _damage;
+        set => _damage = value;
     }
     public float Delay
     {
@@ -27,13 +26,12 @@ public abstract class AttackController : MonoBehaviour
         set => _range = value;
     }
 
-    protected Transform Target => _controller.CurrentTarget;
+    protected Transform Target => _targetFinder.CurrentTarget;
 
 
     private void Awake()
     {
-        _controller = GetComponent<MovementController>();
-        _controller.StopDistance = Range;
+        _targetFinder = GetComponent<TargetFinder>();
 
         StartCoroutine(SetAttack());
     }

@@ -10,12 +10,12 @@ GameObject:
   m_Component:
   - component: {fileID: 7354576412142539397}
   - component: {fileID: 6819452330186155033}
-  - component: {fileID: 7515762864239791393}
   - component: {fileID: 1158413081243793555}
   - component: {fileID: 4988401502179196146}
   - component: {fileID: 6389319425946173781}
   - component: {fileID: 8803585062621639356}
   - component: {fileID: 3570997444342869861}
+  - component: {fileID: 9094285004480623420}
   m_Layer: 0
   m_Name: ManWithPistol
   m_TagString: Untagged
@@ -90,51 +90,6 @@ SpriteRenderer:
   m_WasSpriteAssigned: 1
   m_MaskInteraction: 0
   m_SpriteSortPoint: 0
---- !u!61 &7515762864239791393
-BoxCollider2D:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 6722466966674903542}
-  m_Enabled: 1
-  m_Density: 1
-  m_Material: {fileID: 0}
-  m_IncludeLayers:
-    serializedVersion: 2
-    m_Bits: 0
-  m_ExcludeLayers:
-    serializedVersion: 2
-    m_Bits: 0
-  m_LayerOverridePriority: 0
-  m_ForceSendLayers:
-    serializedVersion: 2
-    m_Bits: 4294967295
-  m_ForceReceiveLayers:
-    serializedVersion: 2
-    m_Bits: 4294967295
-  m_ContactCaptureLayers:
-    serializedVersion: 2
-    m_Bits: 4294967295
-  m_CallbackLayers:
-    serializedVersion: 2
-    m_Bits: 4294967295
-  m_IsTrigger: 0
-  m_UsedByEffector: 0
-  m_UsedByComposite: 0
-  m_Offset: {x: 0.080765516, y: 1.28}
-  m_SpriteTilingProperty:
-    border: {x: 0, y: 0, z: 0, w: 0}
-    pivot: {x: 0.5, y: 0}
-    oldSize: {x: 2.56, y: 2.56}
-    newSize: {x: 2.56, y: 2.56}
-    adaptiveTilingThreshold: 0.5
-    drawMode: 0
-    adaptiveTiling: 0
-  m_AutoTiling: 0
-  serializedVersion: 2
-  m_Size: {x: 1.6464067, y: 2.56}
-  m_EdgeRadius: 0
 --- !u!114 &1158413081243793555
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -147,7 +102,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 6a1d91394035dfa4ab9163e3b909429a, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  _damageResist: 0
   _health: 8
 --- !u!114 &4988401502179196146
 MonoBehaviour:
@@ -161,6 +115,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: e0191908777bba04a9db50d5ceb5b9f0, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  _team: 0
 --- !u!195 &6389319425946173781
 NavMeshAgent:
   m_ObjectHideFlags: 0
@@ -195,8 +150,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 4a147d3e90cc4ea4f940d06971039a72, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  _speed: 1
   _viewRange: 10
+  _speed: 1
 --- !u!114 &3570997444342869861
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -209,7 +164,28 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: fae1ab710938d644d9058a6b7768659c, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  _damege: 8
+  _damage: 0.9
   _delay: 1
   _range: 3
   _bullet: {fileID: 2993084083037857778, guid: c019ed7bec191c44ab1331efe05e502a, type: 3}
+--- !u!65 &9094285004480623420
+BoxCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 6722466966674903542}
+  m_Material: {fileID: 0}
+  m_IncludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_ExcludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_LayerOverridePriority: 0
+  m_IsTrigger: 0
+  m_ProvidesContacts: 0
+  m_Enabled: 1
+  serializedVersion: 3
+  m_Size: {x: 1.6103939, y: 2.5599997, z: 0.19999999}
+  m_Center: {x: 0.10448458, y: 1.2799999, z: 0}

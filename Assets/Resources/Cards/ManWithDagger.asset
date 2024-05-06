@@ -13,6 +13,7 @@ MonoBehaviour:
   m_Name: ManWithDagger
   m_EditorClassIdentifier: 
   _title: ManWithDagger
+  _cost: 3
   _rarity: 0
   _cardSprite: {fileID: 21300000, guid: d0546809e9c061a459d7e41f404fa1f0, type: 3}
   _cardView: {fileID: 11400000, guid: fed795d5ed261854caa0f29c974d776d, type: 2}

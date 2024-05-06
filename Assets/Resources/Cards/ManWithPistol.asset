@@ -13,7 +13,7 @@ MonoBehaviour:
   m_Name: ManWithPistol
   m_EditorClassIdentifier: 
   _title: ManWithPistol
-  _cost: 0
+  _cost: 3
   _rarity: 0
   _cardSprite: {fileID: 21300000, guid: 39138910a67de6f4db85eeeb23b6fe18, type: 3}
   _cardView: {fileID: 11400000, guid: fed795d5ed261854caa0f29c974d776d, type: 2}

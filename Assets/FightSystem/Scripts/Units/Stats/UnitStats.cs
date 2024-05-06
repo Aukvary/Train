@@ -2,10 +2,10 @@ using System;
 using System.Collections.Generic;
 using UnityEngine;
 
-[RequireComponent(typeof(SpriteRenderer)), RequireComponent(typeof(MovementController))]
+[RequireComponent(typeof(SpriteRenderer))]
 public class UnitStats : MonoBehaviour
 {
-    private Teams _team;
+    [SerializeField] private Teams _team;
 
     private Health _heath;
 
@@ -57,12 +57,13 @@ public class UnitStats : MonoBehaviour
         set => _attackController.Range = value;
     }
 
-    private void Awake()
+    protected void Awake()
     {
         _buffs = new Dictionary<Type, Buff>();
         _heath = GetComponent<Health>();
         _attackController = GetComponent<AttackController>();
         _spriteRenderer = GetComponent<SpriteRenderer>();
+        Team = Team;
     }
 
     public void AddBuff(Func<UnitStats, Buff> addFunc)

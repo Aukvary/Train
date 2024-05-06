@@ -3,7 +3,6 @@ using UnityEngine;
 
 public abstract class Health : MonoBehaviour
 {
-    [SerializeField] private float _damageResist;
     public abstract float UnitHealth { get; set; }
 
     public event Action<GameObject> OnTakeDamageEvent;
