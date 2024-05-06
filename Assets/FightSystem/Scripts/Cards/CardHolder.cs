@@ -1,14 +1,32 @@
 using System.Collections.Generic;
+using TMPro;
+using UnityEditor.Experimental.GraphView;
 using UnityEngine;
 
 public class CardHolder : MonoBehaviour
 {
     [SerializeField] private List<DeckCardDrawer> _cardDrawers;
+    [SerializeField] private TextMeshProUGUI _mannaScore;
+    [SerializeField] private List<Transform> _targets;
     [SerializeField] private Camera _camera;
+    [SerializeField] private float _mannaRegen;
 
     private CardDeck _cardDeck;
 
     private (Card card, int index) _selectedCard;
+
+    private float _manna;
+
+    public float Manna
+    {
+        get => _manna;
+
+        private set
+        {
+            _manna = Mathf.Clamp(value, 0, 10);
+            _mannaScore.text = ((int)_manna).ToString();
+        }
+    }
 
     private void Awake()
     {
@@ -26,21 +44,42 @@ public class CardHolder : MonoBehaviour
             });
             drawer.Card = _cardDeck.GetRandomCard();
         }
+        Manna = 2;
     }
 
     private void Update()
     {
+        HotKeySelect();
         UnselectCard();
+        Manna += Time.deltaTime * _mannaRegen;
+    }
+
+    private void HotKeySelect()
+    {
+        KeyCode key = KeyCode.Alpha1;
+
+        foreach(var drawer in _cardDrawers)
+        {
+            if(Input.GetKeyDown(key))
+            {
+                ResetSelectCard();
+                _selectedCard.card = drawer.Select();
+                _selectedCard.index = _cardDrawers.IndexOf(drawer);
+            }
+            key++;
+        }
     }
 
     private void UnselectCard()
     {
+        bool keys = Input.GetKeyDown(KeyCode.Alpha1) || Input.GetKeyDown(KeyCode.Alpha2) ||
+            Input.GetKeyDown(KeyCode.Alpha3) || Input.GetKeyDown(KeyCode.Alpha4);
         if (Input.anyKeyDown && Input.GetKeyDown(KeyCode.Mouse0))
         {
             TrySpawn();
             ResetSelectCard();
         }
-        else if (Input.anyKeyDown && !Input.GetKeyDown(KeyCode.Mouse0))
+        else if (Input.anyKeyDown && !Input.GetKeyDown(KeyCode.Mouse0) && !keys)
         {
             ResetSelectCard();
 
@@ -60,10 +99,13 @@ public class CardHolder : MonoBehaviour
             return;
         if (hit.collider.TryGetComponent<GameField>(out _) == false)
             return;
+        if (_selectedCard.card.Cost > Manna)
+            return;
 
-        _selectedCard.card.Spawn(hit.point);
-
+        Manna -= _selectedCard.card.Cost;
+        _selectedCard.card.Spawn(hit.point, Teams.Green, _targets);
         TakeCardFromDeck();
+
     }
 
     private void TakeCardFromDeck()

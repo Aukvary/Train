@@ -1,16 +1,28 @@
 using System;
 using UnityEngine;
 
-public abstract class Health : ScriptableObject, IScorable<float>
+public abstract class Health : MonoBehaviour
 {
-    [Min(0)]protected float CurrentHealth;
+    public abstract float UnitHealth { get; set; }
 
-    public float Score { get; set; }
+    public event Action<GameObject> OnTakeDamageEvent;
+    public event Action<GameObject> OnTakeHealEvent;
+    public event Action OnDieEvent;
 
-    public event Action<GameObject> OnTakeDamage;
-    public event Action<GameObject> OnTakeHeal;
+    public virtual void Heal(float heal, GameObject healObject)
+    {
+        UnitHealth += Mathf.Max(heal, 0);
+        OnTakeHealEvent?.Invoke(healObject);
+    }
 
-    public abstract void AddScore(float heal);
+    public virtual void Damage(float damage, GameObject enemy)
+    {
+        UnitHealth -= Mathf.Max(damage, 0);
+        OnTakeDamageEvent?.Invoke(enemy);
+    }
 
-    public abstract void RemoveScore(float damage);
+    protected void InvokeDieEvent() =>
+        OnDieEvent?.Invoke();
+
+    protected abstract void Die();
 }

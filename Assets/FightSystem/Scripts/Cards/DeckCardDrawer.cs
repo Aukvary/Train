@@ -1,10 +1,12 @@
+using TMPro;
 using UnityEngine;
 using UnityEngine.Events;
 using UnityEngine.UI;
 
-[RequireComponent(typeof(Image)), RequireComponent(typeof(Button))]
 public class DeckCardDrawer : MonoBehaviour
 {
+    [SerializeField] private TextMeshProUGUI _unitCost;
+
     private Image _spriteRenderer;
     private Button _button;
 
@@ -24,12 +26,13 @@ public class DeckCardDrawer : MonoBehaviour
             {
                 _spriteRenderer.sprite = value.Sprite;
                 Material = value.Material;
+                _unitCost.text = value.Cost.ToString();
             }
             else
             {
                 _spriteRenderer.sprite = null;
                 Material = null;
-                Color = Color.white;
+                _unitCost.text = " ";
             }
 
         }
