@@ -4,23 +4,37 @@ using UnityEngine;
 
 public class PlayerController : MonoBehaviour
 {
+    [SerializeField] float maxDistance;
     [SerializeField] Camera camera;
     [SerializeField] float speed;
-    [SerializeField] GameObject cellColider;
+
+    private float _distance;
+    private Vector3 _newTransform;
 
     private void Update()
+    {
+        CellTransform();
+        transform.position = Vector3.Lerp(transform.position, _newTransform, speed * Time.deltaTime);
+    }
+
+    private void CellTransform()
     {
         var direction = camera.ScreenPointToRay(Input.mousePosition);
 
         RaycastHit hit;
-        if(Physics.Raycast(direction,out hit))
+        if (Physics.Raycast(direction, out hit))
         {
-            if(Input.GetMouseButtonDown(0))
+            var cell = hit.collider.gameObject;
+
+            _distance = Vector3.Distance(cell.transform.position, transform.position);
+            var isCell = cell.GetComponent<TraintTransform>();
+
+            if (Input.GetMouseButtonDown(0) && _distance <= maxDistance && isCell != null)
             {
-                transform.position = hit.collider.gameObject.transform.position;
+                _newTransform = cell.transform.position;
+                transform.LookAt(_newTransform);
                 Debug.Log("pon");
             }
-            
         }
     }
 }
