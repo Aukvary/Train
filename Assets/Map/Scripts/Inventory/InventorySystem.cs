@@ -7,7 +7,7 @@ public class InventorySystem : MonoBehaviour
 {
     [SerializeField] int maxQuslityItem;
 
-    [SerializeField] List<Item> item;
+    public List<Item> item;
 
     private void Update()
     {
