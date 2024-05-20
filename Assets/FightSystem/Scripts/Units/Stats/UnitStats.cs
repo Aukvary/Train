@@ -1,19 +1,21 @@
 using System;
+using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 
-[RequireComponent(typeof(SpriteRenderer))]
 public class UnitStats : MonoBehaviour
 {
     [SerializeField] private Teams _team;
 
-    private Health _heath;
+    private SpriteRenderer _spriteRenderer;
 
     private AttackController _attackController;
+    private MovementController _movementController;
+    private Health _health;
 
-    private Dictionary<Type, Buff> _buffs;
+    private Stats _baseStats;
 
-    private SpriteRenderer _spriteRenderer;
+    private Dictionary<Type, Buff> _buffes;
 
     public Teams Team
     {
@@ -22,62 +24,118 @@ public class UnitStats : MonoBehaviour
         {
             _team = value;
 
-            if(value == Teams.Red)
+            if (value == Teams.Red)
+            {
                 _spriteRenderer.color = new Color(0.88f, 0.345f, 0.345f);
+            }
             else
+            {
                 _spriteRenderer.color = new Color(0.796f, 0.973f, 0.647f);
+            }
         }
     }
 
-    public float Health
+    public float CurrentDamage
     {
-        get => _heath.UnitHealth;
+        get => _attackController.Damage;
 
-        set
-        {
-            _heath.UnitHealth = value;
-        }
+        set => _attackController.Damage = value;
     }
 
-    public float Damage
+    public float CurrentRange
     {
-        get => _attackController.Damege;
+        get => _attackController.Range;
 
-        set => _attackController.Damege = value;
-    }
-
-    public float Delay
-    {
-        get => _attackController.Delay; 
-        set => _attackController.Delay = value;
-    }
-    public float Range
-    {
-        get => _attackController.Range; 
         set => _attackController.Range = value;
     }
 
-    protected void Awake()
+    public float CurrentDelay
     {
-        _buffs = new Dictionary<Type, Buff>();
-        _heath = GetComponent<Health>();
-        _attackController = GetComponent<AttackController>();
+        get => _attackController.Delay;
+
+        set => _attackController.Delay = value;
+    }
+
+    public float CurrentSpeed
+    {
+        get => _movementController.Speed;
+
+        set => _movementController.Speed = value;
+    }
+
+    public float CurrentHealth
+    {
+        get => _health.UnitHealth;
+
+        set => _health.UnitHealth = value;
+    }
+
+    public Stats BaseStats => _baseStats;
+
+    private void Awake()
+    {
         _spriteRenderer = GetComponent<SpriteRenderer>();
+        _attackController = GetComponent<AttackController>();
+        _movementController = GetComponent<MovementController>();
+        _health = GetComponent<Health>();
+
+        _buffes = new Dictionary<Type, Buff>();
         Team = Team;
     }
 
-    public void AddBuff(Func<UnitStats, Buff> addFunc)
+    private void Start()
     {
-        Buff buff = addFunc.Invoke(this);
-
-        if (_buffs.TryAdd(buff.GetType(), buff) == false)
-            _buffs[buff.GetType()]++;
+        InitBaseStats();
     }
 
-    public void RemoveBuff(Func<UnitStats, Buff> removeFunc)
+    private void InitBaseStats()
     {
-        Buff buff = removeFunc.Invoke(this);
+        float damage = _attackController.Damage;
+        float range = _attackController.Range;
+        float delay = _attackController.Delay;
 
-        _buffs.Remove(buff.GetType());
+        if (_movementController != null)
+        {
+            float speed = _movementController.Speed;
+            _baseStats = new Stats(damage, range, delay, speed, Team);
+        }
+        else
+            _baseStats = new Stats(damage, range, delay, 0, Team);
+    }
+
+    public void BuffUnit(Func<UnitStats, Buff> addFunc)
+    {
+        Buff buff = addFunc(this);
+        if (_buffes.ContainsKey(buff.GetType()))
+        {
+            _buffes[buff.GetType()].StuckBuff();
+        }
+        else
+        {
+            _buffes.Add(buff.GetType(), buff);
+        }
+    }
+
+
+    public void UnbuffUnit(Func<UnitStats, Buff> removeFunc)
+    {
+        Buff buff = removeFunc(this);
+        _buffes.Remove(buff.GetType());
+        ResetBuffes();
+    }
+
+    private void ResetBuffes()
+    {
+        CurrentDamage = _baseStats.BaseDamage;
+        CurrentRange = _baseStats.BaseRange;
+        CurrentDelay = _baseStats.BaseDelay;
+
+        if(_movementController != null) 
+            CurrentSpeed = _baseStats.BaseSpeed;
+
+        foreach (var buff in _buffes)
+        {
+            buff.Value.ResetBuff();
+        }
     }
 }

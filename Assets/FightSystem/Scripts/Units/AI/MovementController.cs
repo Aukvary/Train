@@ -2,35 +2,36 @@ using UnityEngine;
 using UnityEngine.AI;
 
 [RequireComponent (typeof(NavMeshAgent))]
-public class MovementController : TargetFinder
+public class MovementController : MonoBehaviour
 {
     [SerializeField] private float _speed;
 
+    private PlayerTargetFinder _targetFinder;
     private NavMeshAgent _aiAgent;
-    private AttackController _attackController;
 
-    private Transform _train;
-    private (Transform forward, Transform back) _boxes;
-
-    public void SetTargets(Transform train, (Transform forward, Transform back) boxes)
+    public float Speed
     {
-        _train = train;
-        _boxes = boxes;
+        get => _speed; 
+        set 
+        {
+            if (value < 0)
+                return;
+            _speed = value;
+        }
     }
+    public Transform CurrentTarget => _targetFinder.CurrentTarget;
 
-    protected override void Awake()
+    protected void Awake()
     {
-        base.Awake();
         _aiAgent = GetComponent<NavMeshAgent>();
-        _attackController = GetComponent<AttackController>();
-        _aiAgent.stoppingDistance = _attackController.Range;
+        _targetFinder = GetComponent<PlayerTargetFinder>();
+        _aiAgent.stoppingDistance = GetComponent<AttackController>().Range;
         _aiAgent.speed = _speed;
         _aiAgent.angularSpeed = 0;
     }
 
-    protected override void FixedUpdate()
+    protected void FixedUpdate()
     {
-        SetTarget();
         if (CurrentTarget == null)
         {
             _aiAgent.ResetPath();
@@ -38,38 +39,5 @@ public class MovementController : TargetFinder
         }
 
         _aiAgent.SetDestination(CurrentTarget.position);
-
-    }
-
-    private void SetTarget()
-    {
-        if (FindUnit())
-            return;
-
-        if (_boxes.back == null && _boxes.forward == null)
-        {
-            CurrentTarget = _train;
-            return;
-        }
-
-        if (_boxes.back == null)
-        {
-            CurrentTarget = _boxes.forward;
-            return;
-        }
-        if (_boxes.forward == null)
-        {
-            CurrentTarget = _boxes.back;
-            return;
-        }
-
-        float distaceForward = Vector3.Distance(transform.position, _boxes.forward.position);
-        float distaceBack = Vector3.Distance(transform.position, _boxes.back.position);
-        if (distaceBack > distaceForward)
-            CurrentTarget = _boxes.forward;
-        else
-            CurrentTarget = _boxes.back;
-    }
-
-    
+    }   
 }

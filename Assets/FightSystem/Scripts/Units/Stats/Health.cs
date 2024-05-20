@@ -5,17 +5,10 @@ public abstract class Health : MonoBehaviour
 {
     public abstract float UnitHealth { get; set; }
 
-    public event Action<GameObject> OnTakeDamageEvent;
-    public event Action<GameObject> OnTakeHealEvent;
+    public event Action<UnitStats> OnTakeDamageEvent;
     public event Action OnDieEvent;
 
-    public virtual void Heal(float heal, GameObject healObject)
-    {
-        UnitHealth += Mathf.Max(heal, 0);
-        OnTakeHealEvent?.Invoke(healObject);
-    }
-
-    public virtual void Damage(float damage, GameObject enemy)
+    public virtual void Damage(float damage, UnitStats enemy)
     {
         UnitHealth -= Mathf.Max(damage, 0);
         OnTakeDamageEvent?.Invoke(enemy);

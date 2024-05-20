@@ -13,10 +13,14 @@ public class TargetFinder : MonoBehaviour
         _currentUnitStats = GetComponent<UnitStats>();
     }
 
-    protected virtual void FixedUpdate()
+    private void FixedUpdate()
     {
-        if(CurrentTarget == null)
-            FindUnit();
+            FindTarget();
+    }
+
+    protected virtual void FindTarget()
+    {
+        FindUnit();
     }
 
     protected bool FindUnit()

@@ -9,6 +9,7 @@ public class CardHolder : MonoBehaviour
     [SerializeField] private List<Transform> _targets;
     [SerializeField] private Camera _camera;
     [SerializeField] private float _mannaRegen;
+    [SerializeField] private float _startManna;
 
     private CardDeck _cardDeck;
 
@@ -43,7 +44,7 @@ public class CardHolder : MonoBehaviour
             });
             drawer.Card = _cardDeck.GetRandomCard();
         }
-        Manna = 2;
+        Manna = _startManna;
     }
 
     private void Update()

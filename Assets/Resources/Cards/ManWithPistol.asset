@@ -17,4 +17,4 @@ MonoBehaviour:
   _rarity: 0
   _cardSprite: {fileID: 21300000, guid: 39138910a67de6f4db85eeeb23b6fe18, type: 3}
   _cardView: {fileID: 11400000, guid: fed795d5ed261854caa0f29c974d776d, type: 2}
-  _unitStats: {fileID: 4988401502179196146, guid: 53ea89b2ffa7236438fb82ea4aae90b0, type: 3}
+  _unitStats: {fileID: -3942606617549358326, guid: 53ea89b2ffa7236438fb82ea4aae90b0, type: 3}

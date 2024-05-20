@@ -12,9 +12,9 @@ GameObject:
   - component: {fileID: 1593903182892370757}
   - component: {fileID: 167312425943750277}
   - component: {fileID: 7748115342666094150}
-  - component: {fileID: 228817974781681641}
-  - component: {fileID: 4858774679557108804}
   - component: {fileID: 5164282572108531813}
+  - component: {fileID: 8807051739593812640}
+  - component: {fileID: 8999698031929172817}
   m_Layer: 0
   m_Name: Tower
   m_TagString: Untagged
@@ -124,35 +124,6 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   _health: 70
---- !u!114 &228817974781681641
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 3761844809139473834}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: fae1ab710938d644d9058a6b7768659c, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  _damage: 4
-  _delay: 2
-  _range: 3
-  _bullet: {fileID: 2993084083037857778, guid: c019ed7bec191c44ab1331efe05e502a, type: 3}
---- !u!114 &4858774679557108804
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 3761844809139473834}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: e0191908777bba04a9db50d5ceb5b9f0, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  _team: 0
 --- !u!114 &5164282572108531813
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -166,6 +137,36 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   _viewRange: 3
+--- !u!114 &8807051739593812640
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 3761844809139473834}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: bc90178abc1b5d34cbe7613da930eb08, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  _damage: 3
+  _delay: 3
+  _range: 3
+  _attackBuff: {fileID: 0}
+  _bullet: {fileID: 2993084083037857778, guid: c019ed7bec191c44ab1331efe05e502a, type: 3}
+--- !u!114 &8999698031929172817
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 3761844809139473834}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 519f406c00b9a024295b6fd4d277871b, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  _team: 0
 --- !u!1 &8513181277779019493
 GameObject:
   m_ObjectHideFlags: 0

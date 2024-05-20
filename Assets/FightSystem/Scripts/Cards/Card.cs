@@ -19,8 +19,8 @@ public class Card : ScriptableObject
 
     public UnitStats Unit => _unitStats;
 
-    public float Health => _unitStats.Health;
-    public float Damage => _unitStats.Damage;
+    public float Health => _unitStats.CurrentHealth;
+    public float Damage => _unitStats.CurrentDamage;
 
     public Material Material => _cardView.Material;
     public Color Color => _cardView.Color;
@@ -30,7 +30,8 @@ public class Card : ScriptableObject
         UnitStats unit = Instantiate(_unitStats, position, Quaternion.identity);
         unit.Team = team;
 
-        var controller = unit.GetComponent<MovementController>();
-        controller.SetTargets(targets[0], (targets[1], targets[2]));
+        var targetFinder = unit.GetComponent<PlayerTargetFinder>();
+
+        targetFinder.SetTargets(targets[0], (targets[1], targets[2]));
     }
 }
