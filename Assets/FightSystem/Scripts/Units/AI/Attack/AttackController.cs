@@ -8,7 +8,7 @@ public abstract class AttackController : MonoBehaviour
     [SerializeField, Min(0)] private float _damage;
     [SerializeField, Min(0)] private float _delay;
     [SerializeField, Min(0)] private float _range;
-    [SerializeField] private TimeBuff _attackBuff;
+    [SerializeField] private Buff _attackBuff;
 
     private TargetFinder _targetFinder;
 

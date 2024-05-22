@@ -9,8 +9,8 @@ public abstract class TimeBuff : Buff
 
     public override Buff AddBuff(UnitStats stats)
     {
-        stats.StartCoroutine(StartBuff());
         _target = stats;
+        stats.StartCoroutine(StartBuff());
 
         return this;
     }

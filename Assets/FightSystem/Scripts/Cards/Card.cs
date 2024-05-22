@@ -32,6 +32,7 @@ public class Card : ScriptableObject
 
         var targetFinder = unit.GetComponent<PlayerTargetFinder>();
 
-        targetFinder.SetTargets(targets[0], (targets[1], targets[2]));
+        if(targetFinder != null ) 
+            targetFinder.SetTargets(targets[0], (targets[1], targets[2]));
     }
 }

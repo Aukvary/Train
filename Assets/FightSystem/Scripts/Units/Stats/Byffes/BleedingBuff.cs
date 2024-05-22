@@ -15,6 +15,8 @@ public class BleedingBuff : TimeBuff
 
     public override Buff RemoveBuff(UnitStats stats)
     {
+        if (stats == null)
+            return this;
         var health = stats.GetComponent<Health>();
 
         health.OnTakeDamageEvent -= (UnitStats unit) =>
@@ -28,14 +30,12 @@ public class BleedingBuff : TimeBuff
 
     protected override void Implement(UnitStats stats)
     {
-        return;
         var health = stats.GetComponent<Health>();
 
         health.OnTakeDamageEvent += (UnitStats unit) =>
         {
             float damage = unit.CurrentDamage * _damageMultiplier;
-            health.Damage(damage, unit);
-            Debug.Log(damage);
+            health.UnitHealth -= damage;
         };
     }
 }
