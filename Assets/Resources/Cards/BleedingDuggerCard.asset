@@ -14,7 +14,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   _title: BleedingDuggerPlayer
   _cost: 4
-  _rarity: 0
+  _rarity: 1
   _cardSprite: {fileID: 21300000, guid: 45ee55178ae96374d9c226c0f48063d7, type: 3}
   _cardView: {fileID: 11400000, guid: fed795d5ed261854caa0f29c974d776d, type: 2}
   _unitStats: {fileID: 8609934370868801845, guid: 418385069a5b127478c9d6cd136a3646, type: 3}

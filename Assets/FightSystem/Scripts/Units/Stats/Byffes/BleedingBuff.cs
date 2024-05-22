@@ -7,10 +7,17 @@ public class BleedingBuff : TimeBuff
     [SerializeField] private float _damageMultiplier;
     [SerializeField] private float _multiplierMultiply;
 
+    private float _multiplier;
+
+    private void Awake()
+    {
+        _multiplier = _damageMultiplier;
+    }
+
     public override void StuckBuff()
     {
         base.StuckBuff();
-        _damageMultiplier *= _multiplierMultiply;
+        _multiplier *= _multiplierMultiply;
     }
 
     public override Buff RemoveBuff(UnitStats stats)
@@ -21,7 +28,7 @@ public class BleedingBuff : TimeBuff
 
         health.OnTakeDamageEvent -= (UnitStats unit) =>
         {
-            float damage = unit.CurrentDamage * _damageMultiplier;
+            float damage = unit.CurrentDamage * _multiplier;
             health.Damage(damage, unit);
         };
 
@@ -34,7 +41,7 @@ public class BleedingBuff : TimeBuff
 
         health.OnTakeDamageEvent += (UnitStats unit) =>
         {
-            float damage = unit.CurrentDamage * _damageMultiplier;
+            float damage = unit.CurrentDamage * _multiplier;
             health.UnitHealth -= damage;
         };
     }

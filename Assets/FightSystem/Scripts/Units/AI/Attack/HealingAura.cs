@@ -1,4 +1,5 @@
 using System.Collections.Generic;
+using Unity.VisualScripting.Antlr3.Runtime.Misc;
 using UnityEngine;
 
 public class HealingAura : AttackController
@@ -13,6 +14,14 @@ public class HealingAura : AttackController
             var unit = cols[i].GetComponent<UnitStats>();
             
             if(unit == null || unit.Team != UnitStats.Team)
+                continue;
+
+            var mover = unit.GetComponent<MovementController>();
+            if (mover == null)
+                continue;
+
+            var healer = unit.GetComponent<HealingAura>();
+            if (healer != null)
                 continue;
 
             unit.CurrentHealth += Damage;

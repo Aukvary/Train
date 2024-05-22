@@ -17,7 +17,7 @@ GameObject:
   - component: {fileID: 8627660374233568527}
   - component: {fileID: 8031085528407762701}
   - component: {fileID: 1800187942316123818}
-  m_Layer: 0
+  m_Layer: 2
   m_Name: ManWithDagger
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -146,7 +146,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 6a1d91394035dfa4ab9163e3b909429a, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  _health: 5
+  Health: 10
 --- !u!114 &782546776087180898
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -188,7 +188,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: f4c0b5f531bee564393475b535f2ece8, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  _viewRange: 10
+  _viewRange: 3
 --- !u!114 &1800187942316123818
 MonoBehaviour:
   m_ObjectHideFlags: 0

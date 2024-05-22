@@ -47,7 +47,18 @@ public class CardDeck
 
     public Card GetRandomCard()
     {
-        var cardType = (CardRarityTitles)Random.Range(0, 3);
+        int chance = Random.Range(1, 101);
+        
+        CardRarityTitles cardType;
+
+        if (chance % 10 == 0)
+            cardType = CardRarityTitles.legendary;
+        else if (chance % 7 == 0)
+            cardType = CardRarityTitles.rarity;
+        else
+            cardType = CardRarityTitles.common;
+
+
 
         if (_cardsInPool[cardType].Count == 0)
             return GetRandomCard();

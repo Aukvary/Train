@@ -1,6 +1,7 @@
 using System;
 using System.Collections;
 using System.Collections.Generic;
+using Unity.VisualScripting;
 using UnityEngine;
 
 public abstract class AttackController : MonoBehaviour
@@ -61,18 +62,11 @@ public abstract class AttackController : MonoBehaviour
 
     protected void SetBuff(UnitStats unit)
     {
-        if (_attackBuff == null)
+        if (_attackBuff == null || unit == null)
             return;
 
-        
-        if(_attackBuff is PeriodicBuff timebuff)
-        {
-            StartCoroutine(timebuff.ImplementBuff());
-        }
-        else
-        {
-            unit.BuffUnit(_attackBuff.AddBuff);
-        }
+
+        unit.BuffUnit(_attackBuff.AddBuff);
     }
     protected abstract void Attack();
 }

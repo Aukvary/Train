@@ -1,5 +1,3 @@
-using System.Collections;
-using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.SceneManagement;
 
@@ -17,6 +15,6 @@ public class Stop : MonoBehaviour
 
     public void LoadScene()
     {
-        Scenemanager.LoadScene("Game Menu");
+        SceneManager.LoadScene("Game Menu");
     }
 }
