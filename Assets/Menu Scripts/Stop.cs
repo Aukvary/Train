@@ -17,6 +17,6 @@ public class Stop : MonoBehaviour
 
     public void LoadScene()
     {
-        Scenemanager.LoadScene("Game Menu");
+        SceneManager.LoadScene("Game Menu");
     }
 }
