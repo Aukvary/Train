@@ -15,7 +15,7 @@ GameObject:
   - component: {fileID: 5164282572108531813}
   - component: {fileID: 8807051739593812640}
   - component: {fileID: 8999698031929172817}
-  m_Layer: 0
+  m_Layer: 2
   m_Name: Tower
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -123,7 +123,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 6a1d91394035dfa4ab9163e3b909429a, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  _health: 70
+  Health: 70
 --- !u!114 &5164282572108531813
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -150,8 +150,8 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   _damage: 3
-  _delay: 3
-  _range: 3
+  _delay: 2
+  _range: 4
   _attackBuff: {fileID: 0}
   _bullet: {fileID: 2993084083037857778, guid: c019ed7bec191c44ab1331efe05e502a, type: 3}
 --- !u!114 &8999698031929172817
@@ -177,7 +177,7 @@ GameObject:
   m_Component:
   - component: {fileID: 2827861113569408465}
   - component: {fileID: 5607499064750221715}
-  m_Layer: 0
+  m_Layer: 2
   m_Name: GameObject
   m_TagString: Untagged
   m_Icon: {fileID: 0}

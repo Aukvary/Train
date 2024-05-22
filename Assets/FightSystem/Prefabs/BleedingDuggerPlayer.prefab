@@ -17,7 +17,7 @@ GameObject:
   - component: {fileID: 3481599902138350446}
   - component: {fileID: 1858729755681685803}
   - component: {fileID: 4299137821594624565}
-  m_Layer: 0
+  m_Layer: 2
   m_Name: BleedingDuggerPlayer
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -138,7 +138,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   _damage: 0.1
-  _delay: 1
+  _delay: 0.7
   _range: 0.9
   _attackBuff: {fileID: 11400000, guid: 6ffa954f57318594ab53dd798e0c43ba, type: 2}
 --- !u!114 &7630420779150242663
@@ -153,7 +153,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 6a1d91394035dfa4ab9163e3b909429a, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  _health: 6
+  Health: 6
 --- !u!114 &3481599902138350446
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -166,7 +166,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: f4c0b5f531bee564393475b535f2ece8, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  _viewRange: 5
+  _viewRange: 3
 --- !u!195 &1858729755681685803
 NavMeshAgent:
   m_ObjectHideFlags: 0
@@ -201,4 +201,4 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 4a147d3e90cc4ea4f940d06971039a72, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  _speed: 1.4
+  _speed: 1.6

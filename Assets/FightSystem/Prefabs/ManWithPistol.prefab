@@ -17,7 +17,7 @@ GameObject:
   - component: {fileID: 8992656359398505824}
   - component: {fileID: 1471911463985494154}
   - component: {fileID: -3942606617549358326}
-  m_Layer: 0
+  m_Layer: 2
   m_Name: ManWithPistol
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -146,7 +146,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 6a1d91394035dfa4ab9163e3b909429a, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  _health: 8
+  Health: 8
 --- !u!114 &8803585062621639356
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -189,7 +189,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: f4c0b5f531bee564393475b535f2ece8, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  _viewRange: 10
+  _viewRange: 3
 --- !u!114 &-3942606617549358326
 MonoBehaviour:
   m_ObjectHideFlags: 0

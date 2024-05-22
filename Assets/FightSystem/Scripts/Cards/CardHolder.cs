@@ -10,6 +10,7 @@ public class CardHolder : MonoBehaviour
     [SerializeField] private Camera _camera;
     [SerializeField] private float _mannaRegen;
     [SerializeField] private float _startManna;
+    [SerializeField] private GameObject _spawZone;
 
     private CardDeck _cardDeck;
 
@@ -41,9 +42,11 @@ public class CardHolder : MonoBehaviour
             {
                 _selectedCard.card = drawer.Select();
                 _selectedCard.index = _cardDrawers.IndexOf(drawer);
+                _spawZone.SetActive(true);
             });
             drawer.Card = _cardDeck.GetRandomCard();
         }
+        _spawZone.SetActive(false);
         Manna = _startManna;
     }
 
@@ -65,6 +68,7 @@ public class CardHolder : MonoBehaviour
                 ResetSelectCard();
                 _selectedCard.card = drawer.Select();
                 _selectedCard.index = _cardDrawers.IndexOf(drawer);
+                _spawZone.SetActive(true);
             }
             key++;
         }
@@ -78,11 +82,12 @@ public class CardHolder : MonoBehaviour
         {
             TrySpawn();
             ResetSelectCard();
+            _spawZone.SetActive(false);
         }
         else if (Input.anyKeyDown && !Input.GetKeyDown(KeyCode.Mouse0) && !keys)
         {
             ResetSelectCard();
-
+            _spawZone.SetActive(false);
         }
     }
 

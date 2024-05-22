@@ -2,23 +2,23 @@ using UnityEngine;
 
 public class PlayerHealth : Health
 {
-    [SerializeField][Min(0f)] private float _health;
+    [SerializeField][Min(0f)] protected float Health;
 
-    private float _maxHealth;
+    protected float MaxHealth;
 
-    private void Awake()
+    protected virtual void Awake()
     {
-        _maxHealth = _health;
+        MaxHealth = Health;
     }
 
     public override float UnitHealth
     {
-        get => _health;
+        get => Health;
 
         set
         {
-            _health = Mathf.Clamp(value, 0, _maxHealth);
-            if (_health == 0)
+            Health = Mathf.Clamp(value, 0, MaxHealth);
+            if (Health == 0)
                 Die();
         }
     }

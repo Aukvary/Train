@@ -39,7 +39,5 @@ public class MovementController : MonoBehaviour
         }
 
         _aiAgent.SetDestination(CurrentTarget.position);
-        if (_targetFinder is FriendFinder)
-            print(CurrentTarget.name);
     }   
 }

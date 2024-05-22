@@ -17,7 +17,7 @@ GameObject:
   - component: {fileID: 6018701074295059921}
   - component: {fileID: 2438838685637546430}
   - component: {fileID: 4730950664882345747}
-  m_Layer: 0
+  m_Layer: 2
   m_Name: Doctor
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -176,7 +176,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 6a1d91394035dfa4ab9163e3b909429a, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  _health: 6
+  Health: 6
 --- !u!114 &2438838685637546430
 MonoBehaviour:
   m_ObjectHideFlags: 0

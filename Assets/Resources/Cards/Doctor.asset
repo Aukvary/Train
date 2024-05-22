@@ -14,7 +14,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   _title: Doctor
   _cost: 5
-  _rarity: 0
+  _rarity: 2
   _cardSprite: {fileID: 21300000, guid: 954f568e0f0b4074487d36e85448b5e0, type: 3}
   _cardView: {fileID: 11400000, guid: fed795d5ed261854caa0f29c974d776d, type: 2}
   _unitStats: {fileID: 5450180801675848469, guid: d52da0e76a8629d499e4c3e57ea0144a, type: 3}
