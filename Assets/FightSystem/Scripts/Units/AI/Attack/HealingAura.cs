@@ -12,7 +12,7 @@ public class HealingAura : AttackController
         {
             var unit = cols[i].GetComponent<UnitStats>();
             
-            if(unit == null || unit.Team == UnitStats.Team)
+            if(unit == null || unit.Team != UnitStats.Team)
                 continue;
 
             unit.CurrentHealth += Damage;

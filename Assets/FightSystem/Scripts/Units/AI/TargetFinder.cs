@@ -4,13 +4,13 @@ public class TargetFinder : MonoBehaviour
 {
     [SerializeField] protected float _viewRange;
 
-    private UnitStats _currentUnitStats;
+    public UnitStats CurrentUnitStats { get; private set; }
 
     public Transform CurrentTarget { get; protected set; }
 
     protected virtual void Awake()
     {
-        _currentUnitStats = GetComponent<UnitStats>();
+        CurrentUnitStats = GetComponent<UnitStats>();
     }
 
     private void FixedUpdate()
@@ -36,7 +36,7 @@ public class TargetFinder : MonoBehaviour
         {
             var stats = col.GetComponent<UnitStats>();
 
-            if (stats == null || stats.Team == _currentUnitStats.Team)
+            if (stats == null || stats.Team == CurrentUnitStats.Team)
                 continue;
 
             float distance = Vector3.Distance(stats.transform.position, transform.position);

@@ -6,7 +6,7 @@ public class MovementController : MonoBehaviour
 {
     [SerializeField] private float _speed;
 
-    private PlayerTargetFinder _targetFinder;
+    private TargetFinder _targetFinder;
     private NavMeshAgent _aiAgent;
 
     public float Speed
@@ -24,7 +24,7 @@ public class MovementController : MonoBehaviour
     protected void Awake()
     {
         _aiAgent = GetComponent<NavMeshAgent>();
-        _targetFinder = GetComponent<PlayerTargetFinder>();
+        _targetFinder = GetComponent<TargetFinder>();
         _aiAgent.stoppingDistance = GetComponent<AttackController>().Range;
         _aiAgent.speed = _speed;
         _aiAgent.angularSpeed = 0;
@@ -39,5 +39,7 @@ public class MovementController : MonoBehaviour
         }
 
         _aiAgent.SetDestination(CurrentTarget.position);
+        if (_targetFinder is FriendFinder)
+            print(CurrentTarget.name);
     }   
 }
