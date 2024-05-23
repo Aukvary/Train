@@ -38,7 +38,6 @@ RenderSettings:
   m_ReflectionIntensity: 1
   m_CustomReflection: {fileID: 0}
   m_Sun: {fileID: 0}
-  m_IndirectSpecularColor: {r: 0.6950898, g: 0.6654092, b: 0.6297852, a: 1}
   m_UseRadianceAmbientProbe: 0
 --- !u!157 &3
 LightmapSettings:
@@ -297,7 +296,7 @@ Transform:
   m_GameObject: {fileID: 555591515}
   serializedVersion: 2
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 7.36, y: -1.306, z: 3.67}
+  m_LocalPosition: {x: 6.88, y: -1.306, z: 2.34}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
@@ -328,7 +327,7 @@ Transform:
   m_GameObject: {fileID: 811978573}
   serializedVersion: 2
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: -2.86, y: -1.306, z: 7.39}
+  m_LocalPosition: {x: -3.34, y: -1.306, z: 6.06}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
@@ -550,7 +549,7 @@ Transform:
   m_GameObject: {fileID: 1090229508}
   serializedVersion: 2
   m_LocalRotation: {x: 0.2978162, y: -0, z: -0, w: 0.9546233}
-  m_LocalPosition: {x: 0, y: 3.786, z: -6.472}
+  m_LocalPosition: {x: 0, y: 3.93, z: -7.22}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children:
@@ -1335,7 +1334,7 @@ MonoBehaviour:
   - {fileID: 1635388218}
   - {fileID: 1253119343}
   - {fileID: 1253910096}
-  _mannaRegen: 1.05
+  _mannaRegen: 1
   _backRight: {fileID: 493109185}
   _backLeft: {fileID: 555591516}
   _forwardRight: {fileID: 1852188643}
@@ -1441,7 +1440,19 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 2721891035278347630, guid: a1bf10280d5eac641a1f4640912e6cba, type: 3}
       propertyPath: m_Pivot.y
-      value: 1
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 2721891035278347630, guid: a1bf10280d5eac641a1f4640912e6cba, type: 3}
+      propertyPath: m_AnchorMax.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 2721891035278347630, guid: a1bf10280d5eac641a1f4640912e6cba, type: 3}
+      propertyPath: m_AnchorMin.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 2721891035278347630, guid: a1bf10280d5eac641a1f4640912e6cba, type: 3}
+      propertyPath: m_AnchoredPosition.y
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 2840382119159263851, guid: a1bf10280d5eac641a1f4640912e6cba, type: 3}
       propertyPath: m_Layer

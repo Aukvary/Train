@@ -1,5 +1,3 @@
-using System.Collections;
-using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.SceneManagement;
 
@@ -7,6 +5,7 @@ public class GameManag : MonoBehaviour
 {
     public void Quit()
     {
+        PlayerPrefs.SetFloat(nameof(TowerHealth), 0);
         Application.Quit();
     }
 
