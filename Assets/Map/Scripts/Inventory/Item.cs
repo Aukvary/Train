@@ -5,7 +5,7 @@ using TMPro;
 [Serializable] public class Item
 {
     public string name;
-    public float quantity;
+    public int quantity;
     public string description;
     public TextMeshProUGUI textQuantity;
 

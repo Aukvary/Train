@@ -360,7 +360,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 1
+  m_IsActive: 0
 --- !u!224 &47048478
 RectTransform:
   m_ObjectHideFlags: 0
@@ -442,8 +442,8 @@ MonoBehaviour:
       m_Calls: []
   m_text: "\u0445\u043E\u0434\u044C\u0431\u0430"
   m_isRightToLeft: 0
-  m_fontAsset: {fileID: 11400000, guid: 8f586378b4e144a9851e7b34d9b748ee, type: 2}
-  m_sharedMaterial: {fileID: 2180264, guid: 8f586378b4e144a9851e7b34d9b748ee, type: 2}
+  m_fontAsset: {fileID: 11400000, guid: c58b66b91334bea49b27bc8623011b92, type: 2}
+  m_sharedMaterial: {fileID: 4410582916263354714, guid: c58b66b91334bea49b27bc8623011b92, type: 2}
   m_fontSharedMaterials: []
   m_fontMaterial: {fileID: 0}
   m_fontMaterials: []
@@ -936,10 +936,10 @@ MonoBehaviour:
       m_Calls: []
   m_text: "\u0437\u0434\u043E\u0440\u043E\u0432\u044C\u0435 \u043F\u043E\u0435\u0437\u0434\u0430
     \u0432 \u0431\u0438\u0442\u0432\u0430\u0445 \u0443\u0432\u0435\u043B\u0438\u0447\u0435\u043D\u043E
-    \u043D\u0430 \u0445 \u043F\u0440\u043E\u0446\u0435\u043D\u0442\u043E\u0432"
+    \u043D\u0430 \u0445 \u043F\u0440\u043E\u0446\u0435\u043D\u0442\u043E\u0432 "
   m_isRightToLeft: 0
-  m_fontAsset: {fileID: 11400000, guid: 8f586378b4e144a9851e7b34d9b748ee, type: 2}
-  m_sharedMaterial: {fileID: 2180264, guid: 8f586378b4e144a9851e7b34d9b748ee, type: 2}
+  m_fontAsset: {fileID: 11400000, guid: c58b66b91334bea49b27bc8623011b92, type: 2}
+  m_sharedMaterial: {fileID: 4410582916263354714, guid: c58b66b91334bea49b27bc8623011b92, type: 2}
   m_fontSharedMaterials: []
   m_fontMaterial: {fileID: 0}
   m_fontMaterials: []
@@ -1087,6 +1087,81 @@ PrefabInstance:
     m_AddedGameObjects: []
     m_AddedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 4647aa78fd492284199daa99a2f08f5c, type: 3}
+--- !u!1 &137817518
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 137817519}
+  - component: {fileID: 137817521}
+  - component: {fileID: 137817520}
+  m_Layer: 5
+  m_Name: Image (1)
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!224 &137817519
+RectTransform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 137817518}
+  m_LocalRotation: {x: 0, y: 0, z: -0.7071068, w: 0.7071068}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children: []
+  m_Father: {fileID: 429611498}
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: -90}
+  m_AnchorMin: {x: 0.5, y: 0.5}
+  m_AnchorMax: {x: 0.5, y: 0.5}
+  m_AnchoredPosition: {x: -110.8, y: 73.7}
+  m_SizeDelta: {x: 48.3865, y: 22.8421}
+  m_Pivot: {x: 0.5, y: 0.5}
+--- !u!114 &137817520
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 137817518}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: fe87c0e1cc204ed48ad3b37840f39efc, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  m_Material: {fileID: 0}
+  m_Color: {r: 1, g: 1, b: 1, a: 1}
+  m_RaycastTarget: 1
+  m_RaycastPadding: {x: 0, y: 0, z: 0, w: 0}
+  m_Maskable: 1
+  m_OnCullStateChanged:
+    m_PersistentCalls:
+      m_Calls: []
+  m_Sprite: {fileID: 21300000, guid: 4dde859325037d1428d2dd08cbe97a36, type: 3}
+  m_Type: 0
+  m_PreserveAspect: 0
+  m_FillCenter: 1
+  m_FillMethod: 4
+  m_FillAmount: 1
+  m_FillClockwise: 1
+  m_FillOrigin: 0
+  m_UseSpriteMesh: 0
+  m_PixelsPerUnitMultiplier: 1
+--- !u!222 &137817521
+CanvasRenderer:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 137817518}
+  m_CullTransparentMesh: 1
 --- !u!1001 &138965561
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -1283,11 +1358,10 @@ MonoBehaviour:
     m_PersistentCalls:
       m_Calls: []
   m_text: "\u041F\u043E\u0435\u0437\u0434 \u043C\u043E\u0436\u0435\u0442 \u0445\u043E\u0434\u0438\u0442\u044C
-    \u043D\u0430 \u0434\u0432\u0435 \u043A\u043B\u0435\u0442\u043A\u0438 \u0437\u0430
-    \u043E\u0434\u0438\u043D \u0445\u043E\u0434"
+    \u043D\u0430 \u0434\u0432\u0435 \u043A\u043B\u0435\u0442\u043A\u0438"
   m_isRightToLeft: 0
-  m_fontAsset: {fileID: 11400000, guid: 8f586378b4e144a9851e7b34d9b748ee, type: 2}
-  m_sharedMaterial: {fileID: 2180264, guid: 8f586378b4e144a9851e7b34d9b748ee, type: 2}
+  m_fontAsset: {fileID: 11400000, guid: c58b66b91334bea49b27bc8623011b92, type: 2}
+  m_sharedMaterial: {fileID: 4410582916263354714, guid: c58b66b91334bea49b27bc8623011b92, type: 2}
   m_fontSharedMaterials: []
   m_fontMaterial: {fileID: 0}
   m_fontMaterials: []
@@ -1418,10 +1492,10 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_text: "\u0445\u043E\u043B\u043E\u0434\u0438\u043B\u044C\u043D\u0438\u043A"
+  m_text: "\u043E\u043F\u0442\u0438\u043C\u0438\u0437\u0430\u0446\u0438\u044F \u0434\u0432\u0438\u0433\u0430\u0442\u0435\u043B\u044F"
   m_isRightToLeft: 0
-  m_fontAsset: {fileID: 11400000, guid: 8f586378b4e144a9851e7b34d9b748ee, type: 2}
-  m_sharedMaterial: {fileID: 2180264, guid: 8f586378b4e144a9851e7b34d9b748ee, type: 2}
+  m_fontAsset: {fileID: 11400000, guid: c58b66b91334bea49b27bc8623011b92, type: 2}
+  m_sharedMaterial: {fileID: 4410582916263354714, guid: c58b66b91334bea49b27bc8623011b92, type: 2}
   m_fontSharedMaterials: []
   m_fontMaterial: {fileID: 0}
   m_fontMaterials: []
@@ -1559,8 +1633,8 @@ MonoBehaviour:
       m_Calls: []
   m_text: 88
   m_isRightToLeft: 0
-  m_fontAsset: {fileID: 11400000, guid: 8f586378b4e144a9851e7b34d9b748ee, type: 2}
-  m_sharedMaterial: {fileID: 2180264, guid: 8f586378b4e144a9851e7b34d9b748ee, type: 2}
+  m_fontAsset: {fileID: 11400000, guid: c58b66b91334bea49b27bc8623011b92, type: 2}
+  m_sharedMaterial: {fileID: 4410582916263354714, guid: c58b66b91334bea49b27bc8623011b92, type: 2}
   m_fontSharedMaterials: []
   m_fontMaterial: {fileID: 0}
   m_fontMaterials: []
@@ -1620,7 +1694,7 @@ MonoBehaviour:
   m_VertexBufferAutoSizeReduction: 0
   m_useMaxVisibleDescender: 1
   m_pageToDisplay: 1
-  m_margin: {x: 0, y: 0, z: 0, w: 0}
+  m_margin: {x: 0, y: 0, z: -5.7833424, w: 0}
   m_isUsingLegacyAnimationComponent: 0
   m_isVolumetricText: 0
   m_hasFontAssetChanged: 0
@@ -1713,6 +1787,50 @@ PrefabInstance:
     m_AddedGameObjects: []
     m_AddedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 4647aa78fd492284199daa99a2f08f5c, type: 3}
+--- !u!1 &226881799
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 226881801}
+  - component: {fileID: 226881800}
+  m_Layer: 0
+  m_Name: saveTestController
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!114 &226881800
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 226881799}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: d070c0dc7747fab43b85851db3ed87be, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+--- !u!4 &226881801
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 226881799}
+  serializedVersion: 2
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 555.1301, y: 455.4661, z: -46.02408}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children: []
+  m_Father: {fileID: 0}
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!4 &240067664 stripped
 Transform:
   m_CorrespondingSourceObject: {fileID: 8662600407005941723, guid: 4647aa78fd492284199daa99a2f08f5c, type: 3}
@@ -1788,6 +1906,7 @@ GameObject:
   - component: {fileID: 247344204}
   - component: {fileID: 247344203}
   - component: {fileID: 247344202}
+  - component: {fileID: 247344205}
   m_Layer: 5
   m_Name: Button
   m_TagString: Untagged
@@ -1858,7 +1977,19 @@ MonoBehaviour:
   m_TargetGraphic: {fileID: 247344203}
   m_OnClick:
     m_PersistentCalls:
-      m_Calls: []
+      m_Calls:
+      - m_Target: {fileID: 247344205}
+        m_TargetAssemblyTypeName: LevelApply, Assembly-CSharp
+        m_MethodName: LevelPlus
+        m_Mode: 1
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
 --- !u!114 &247344203
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -1897,6 +2028,19 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 247344200}
   m_CullTransparentMesh: 1
+--- !u!114 &247344205
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 247344200}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 764f09c19386059438b12cfbbc1eab4f, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  level: 5
 --- !u!1001 &252336251
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -2104,8 +2248,8 @@ MonoBehaviour:
       m_Calls: []
   m_text: "+ \u0440\u0435\u0441"
   m_isRightToLeft: 0
-  m_fontAsset: {fileID: 11400000, guid: 8f586378b4e144a9851e7b34d9b748ee, type: 2}
-  m_sharedMaterial: {fileID: 2180264, guid: 8f586378b4e144a9851e7b34d9b748ee, type: 2}
+  m_fontAsset: {fileID: 11400000, guid: c58b66b91334bea49b27bc8623011b92, type: 2}
+  m_sharedMaterial: {fileID: 4410582916263354714, guid: c58b66b91334bea49b27bc8623011b92, type: 2}
   m_fontSharedMaterials: []
   m_fontMaterial: {fileID: 0}
   m_fontMaterials: []
@@ -2334,6 +2478,7 @@ GameObject:
   - component: {fileID: 323316808}
   - component: {fileID: 323316807}
   - component: {fileID: 323316806}
+  - component: {fileID: 323316809}
   m_Layer: 5
   m_Name: Button
   m_TagString: Untagged
@@ -2404,7 +2549,19 @@ MonoBehaviour:
   m_TargetGraphic: {fileID: 323316807}
   m_OnClick:
     m_PersistentCalls:
-      m_Calls: []
+      m_Calls:
+      - m_Target: {fileID: 323316809}
+        m_TargetAssemblyTypeName: LevelApply, Assembly-CSharp
+        m_MethodName: LevelPlus
+        m_Mode: 1
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
 --- !u!114 &323316807
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -2443,6 +2600,19 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 323316804}
   m_CullTransparentMesh: 1
+--- !u!114 &323316809
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 323316804}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 764f09c19386059438b12cfbbc1eab4f, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  level: 1
 --- !u!4 &325683883 stripped
 Transform:
   m_CorrespondingSourceObject: {fileID: 8662600407005941723, guid: 4647aa78fd492284199daa99a2f08f5c, type: 3}
@@ -2576,8 +2746,8 @@ MonoBehaviour:
       m_Calls: []
   m_text: "\u0423\u043B\u0443\u0447\u0448\u0438\u0442\u044C"
   m_isRightToLeft: 0
-  m_fontAsset: {fileID: 11400000, guid: 8f586378b4e144a9851e7b34d9b748ee, type: 2}
-  m_sharedMaterial: {fileID: 2180264, guid: 8f586378b4e144a9851e7b34d9b748ee, type: 2}
+  m_fontAsset: {fileID: 11400000, guid: c58b66b91334bea49b27bc8623011b92, type: 2}
+  m_sharedMaterial: {fileID: 4410582916263354714, guid: c58b66b91334bea49b27bc8623011b92, type: 2}
   m_fontSharedMaterials: []
   m_fontMaterial: {fileID: 0}
   m_fontMaterials: []
@@ -2814,6 +2984,7 @@ RectTransform:
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children:
+  - {fileID: 429611498}
   - {fileID: 1777138129}
   - {fileID: 2053961508}
   m_Father: {fileID: 2109497078}
@@ -3177,6 +3348,62 @@ Transform:
   m_CorrespondingSourceObject: {fileID: 8662600407005941723, guid: 4647aa78fd492284199daa99a2f08f5c, type: 3}
   m_PrefabInstance: {fileID: 58356782}
   m_PrefabAsset: {fileID: 0}
+--- !u!1 &423551894
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 423551896}
+  - component: {fileID: 423551895}
+  m_Layer: 0
+  m_Name: MenuController
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!114 &423551895
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 423551894}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 924284e90c9b5f54d99522fef98c5682, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  progressMenu: {fileID: 2109497077}
+  closeMenu:
+  - {fileID: 47048477}
+  - {fileID: 1101798491}
+  - {fileID: 1067698251}
+  - {fileID: 1927401684}
+  - {fileID: 1705268096}
+  - {fileID: 1666151713}
+  - {fileID: 1127155811}
+  - {fileID: 1632539122}
+  cameraMove: {fileID: 563220815}
+  playerController: {fileID: 498072531}
+--- !u!4 &423551896
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 423551894}
+  serializedVersion: 2
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 664.6483, y: 421.48343, z: -44.2795}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children: []
+  m_Father: {fileID: 0}
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!4 &425007531 stripped
 Transform:
   m_CorrespondingSourceObject: {fileID: 8662600407005941723, guid: 4647aa78fd492284199daa99a2f08f5c, type: 3}
@@ -3256,6 +3483,45 @@ PrefabInstance:
     m_AddedGameObjects: []
     m_AddedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 4647aa78fd492284199daa99a2f08f5c, type: 3}
+--- !u!1 &429611497
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 429611498}
+  m_Layer: 5
+  m_Name: decoration
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!224 &429611498
+RectTransform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 429611497}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children:
+  - {fileID: 1026200938}
+  - {fileID: 510267157}
+  - {fileID: 137817519}
+  - {fileID: 874645244}
+  m_Father: {fileID: 364044871}
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+  m_AnchorMin: {x: 0, y: 0}
+  m_AnchorMax: {x: 1, y: 1}
+  m_AnchoredPosition: {x: -0.0047302246, y: 0.0005187988}
+  m_SizeDelta: {x: -0.13000488, y: -0.7200012}
+  m_Pivot: {x: 0.5, y: 0.5}
 --- !u!4 &440060151 stripped
 Transform:
   m_CorrespondingSourceObject: {fileID: 8662600407005941723, guid: 4647aa78fd492284199daa99a2f08f5c, type: 3}
@@ -3757,6 +4023,7 @@ GameObject:
   - component: {fileID: 509528491}
   - component: {fileID: 509528490}
   - component: {fileID: 509528489}
+  - component: {fileID: 509528492}
   m_Layer: 5
   m_Name: Button (7)
   m_TagString: Untagged
@@ -3827,7 +4094,19 @@ MonoBehaviour:
   m_TargetGraphic: {fileID: 509528490}
   m_OnClick:
     m_PersistentCalls:
-      m_Calls: []
+      m_Calls:
+      - m_Target: {fileID: 509528492}
+        m_TargetAssemblyTypeName: openButtonDescryption, Assembly-CSharp
+        m_MethodName: OpenDescription
+        m_Mode: 1
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
 --- !u!114 &509528490
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -3865,6 +4144,102 @@ CanvasRenderer:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 509528487}
+  m_CullTransparentMesh: 1
+--- !u!114 &509528492
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 509528487}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: bbaf014d8576ad148ab70442d670168e, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  openMenu: {fileID: 47048477}
+  closeMenu:
+  - {fileID: 1101798491}
+  - {fileID: 1067698251}
+  - {fileID: 1927401684}
+  - {fileID: 1705268096}
+  - {fileID: 1666151713}
+  - {fileID: 1127155811}
+  - {fileID: 1632539122}
+--- !u!1 &510267156
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 510267157}
+  - component: {fileID: 510267159}
+  - component: {fileID: 510267158}
+  m_Layer: 5
+  m_Name: Image (3)
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!224 &510267157
+RectTransform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 510267156}
+  m_LocalRotation: {x: 0, y: 0, z: -0.7071068, w: 0.7071068}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children: []
+  m_Father: {fileID: 429611498}
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: -90}
+  m_AnchorMin: {x: 0.5, y: 0.5}
+  m_AnchorMax: {x: 0.5, y: 0.5}
+  m_AnchoredPosition: {x: -250.4, y: -75.6}
+  m_SizeDelta: {x: 48.3865, y: 22.8421}
+  m_Pivot: {x: 0.5, y: 0.5}
+--- !u!114 &510267158
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 510267156}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: fe87c0e1cc204ed48ad3b37840f39efc, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  m_Material: {fileID: 0}
+  m_Color: {r: 1, g: 1, b: 1, a: 1}
+  m_RaycastTarget: 1
+  m_RaycastPadding: {x: 0, y: 0, z: 0, w: 0}
+  m_Maskable: 1
+  m_OnCullStateChanged:
+    m_PersistentCalls:
+      m_Calls: []
+  m_Sprite: {fileID: 21300000, guid: 4dde859325037d1428d2dd08cbe97a36, type: 3}
+  m_Type: 0
+  m_PreserveAspect: 0
+  m_FillCenter: 1
+  m_FillMethod: 4
+  m_FillAmount: 1
+  m_FillClockwise: 1
+  m_FillOrigin: 0
+  m_UseSpriteMesh: 0
+  m_PixelsPerUnitMultiplier: 1
+--- !u!222 &510267159
+CanvasRenderer:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 510267156}
   m_CullTransparentMesh: 1
 --- !u!4 &512942811 stripped
 Transform:
@@ -3930,8 +4305,8 @@ MonoBehaviour:
       m_Calls: []
   m_text: "\u0423\u043B\u0443\u0447\u0448\u0438\u0442\u044C"
   m_isRightToLeft: 0
-  m_fontAsset: {fileID: 11400000, guid: 8f586378b4e144a9851e7b34d9b748ee, type: 2}
-  m_sharedMaterial: {fileID: 2180264, guid: 8f586378b4e144a9851e7b34d9b748ee, type: 2}
+  m_fontAsset: {fileID: 11400000, guid: c58b66b91334bea49b27bc8623011b92, type: 2}
+  m_sharedMaterial: {fileID: 4410582916263354714, guid: c58b66b91334bea49b27bc8623011b92, type: 2}
   m_fontSharedMaterials: []
   m_fontMaterial: {fileID: 0}
   m_fontMaterials: []
@@ -4064,8 +4439,8 @@ MonoBehaviour:
       m_Calls: []
   m_text: 88
   m_isRightToLeft: 0
-  m_fontAsset: {fileID: 11400000, guid: 8f586378b4e144a9851e7b34d9b748ee, type: 2}
-  m_sharedMaterial: {fileID: 2180264, guid: 8f586378b4e144a9851e7b34d9b748ee, type: 2}
+  m_fontAsset: {fileID: 11400000, guid: c58b66b91334bea49b27bc8623011b92, type: 2}
+  m_sharedMaterial: {fileID: 4410582916263354714, guid: c58b66b91334bea49b27bc8623011b92, type: 2}
   m_fontSharedMaterials: []
   m_fontMaterial: {fileID: 0}
   m_fontMaterials: []
@@ -4201,8 +4576,8 @@ MonoBehaviour:
     \u0445\u043E\u0434, \u0431\u0443\u0434\u0435\u0442 \u0441\u043D\u0438\u0436\u0435\u043D\u043E
     \u043D\u0430 25 \u043F\u0440\u043E\u0446\u0435\u043D\u0442\u043E\u0432"
   m_isRightToLeft: 0
-  m_fontAsset: {fileID: 11400000, guid: 8f586378b4e144a9851e7b34d9b748ee, type: 2}
-  m_sharedMaterial: {fileID: 2180264, guid: 8f586378b4e144a9851e7b34d9b748ee, type: 2}
+  m_fontAsset: {fileID: 11400000, guid: c58b66b91334bea49b27bc8623011b92, type: 2}
+  m_sharedMaterial: {fileID: 4410582916263354714, guid: c58b66b91334bea49b27bc8623011b92, type: 2}
   m_fontSharedMaterials: []
   m_fontMaterial: {fileID: 0}
   m_fontMaterials: []
@@ -4528,6 +4903,7 @@ GameObject:
   - component: {fileID: 624291692}
   - component: {fileID: 624291691}
   - component: {fileID: 624291690}
+  - component: {fileID: 624291693}
   m_Layer: 5
   m_Name: Button (6)
   m_TagString: Untagged
@@ -4598,7 +4974,19 @@ MonoBehaviour:
   m_TargetGraphic: {fileID: 624291691}
   m_OnClick:
     m_PersistentCalls:
-      m_Calls: []
+      m_Calls:
+      - m_Target: {fileID: 624291693}
+        m_TargetAssemblyTypeName: openButtonDescryption, Assembly-CSharp
+        m_MethodName: OpenDescription
+        m_Mode: 1
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
 --- !u!114 &624291691
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -4637,6 +5025,27 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 624291688}
   m_CullTransparentMesh: 1
+--- !u!114 &624291693
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 624291688}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: bbaf014d8576ad148ab70442d670168e, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  openMenu: {fileID: 1632539122}
+  closeMenu:
+  - {fileID: 47048477}
+  - {fileID: 1101798491}
+  - {fileID: 1067698251}
+  - {fileID: 1927401684}
+  - {fileID: 1705268096}
+  - {fileID: 1666151713}
+  - {fileID: 1127155811}
 --- !u!4 &624690938 stripped
 Transform:
   m_CorrespondingSourceObject: {fileID: 8662600407005941723, guid: 4647aa78fd492284199daa99a2f08f5c, type: 3}
@@ -4728,6 +5137,7 @@ GameObject:
   - component: {fileID: 647918933}
   - component: {fileID: 647918932}
   - component: {fileID: 647918931}
+  - component: {fileID: 647918934}
   m_Layer: 5
   m_Name: Button
   m_TagString: Untagged
@@ -4798,7 +5208,19 @@ MonoBehaviour:
   m_TargetGraphic: {fileID: 647918932}
   m_OnClick:
     m_PersistentCalls:
-      m_Calls: []
+      m_Calls:
+      - m_Target: {fileID: 647918934}
+        m_TargetAssemblyTypeName: LevelApply, Assembly-CSharp
+        m_MethodName: LevelPlus
+        m_Mode: 1
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
 --- !u!114 &647918932
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -4837,6 +5259,19 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 647918929}
   m_CullTransparentMesh: 1
+--- !u!114 &647918934
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 647918929}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 764f09c19386059438b12cfbbc1eab4f, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  level: 6
 --- !u!1001 &648275790
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -4970,8 +5405,8 @@ MonoBehaviour:
       m_Calls: []
   m_text: "\u0436\u0435\u043B\u0435\u0437\u043D\u044B\u0435  \u0438\u043D\u0441\u0442\u0440\u0443\u043C\u0435\u043D\u0442\u044B"
   m_isRightToLeft: 0
-  m_fontAsset: {fileID: 11400000, guid: 8f586378b4e144a9851e7b34d9b748ee, type: 2}
-  m_sharedMaterial: {fileID: 2180264, guid: 8f586378b4e144a9851e7b34d9b748ee, type: 2}
+  m_fontAsset: {fileID: 11400000, guid: c58b66b91334bea49b27bc8623011b92, type: 2}
+  m_sharedMaterial: {fileID: 4410582916263354714, guid: c58b66b91334bea49b27bc8623011b92, type: 2}
   m_fontSharedMaterials: []
   m_fontMaterial: {fileID: 0}
   m_fontMaterials: []
@@ -5481,8 +5916,8 @@ MonoBehaviour:
     \u0432 \u0431\u0438\u0442\u0432\u0430\u0445 \u0443\u0432\u0435\u043B\u0438\u0447\u0435\u043D\u043E
     \u043D\u0430 5 \u043F\u0440\u043E\u0446\u0435\u043D\u0442\u043E\u0432"
   m_isRightToLeft: 0
-  m_fontAsset: {fileID: 11400000, guid: 8f586378b4e144a9851e7b34d9b748ee, type: 2}
-  m_sharedMaterial: {fileID: 2180264, guid: 8f586378b4e144a9851e7b34d9b748ee, type: 2}
+  m_fontAsset: {fileID: 11400000, guid: c58b66b91334bea49b27bc8623011b92, type: 2}
+  m_sharedMaterial: {fileID: 4410582916263354714, guid: c58b66b91334bea49b27bc8623011b92, type: 2}
   m_fontSharedMaterials: []
   m_fontMaterial: {fileID: 0}
   m_fontMaterials: []
@@ -5773,6 +6208,81 @@ PrefabInstance:
     m_AddedGameObjects: []
     m_AddedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 4647aa78fd492284199daa99a2f08f5c, type: 3}
+--- !u!1 &874645243
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 874645244}
+  - component: {fileID: 874645246}
+  - component: {fileID: 874645245}
+  m_Layer: 5
+  m_Name: Image (2)
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!224 &874645244
+RectTransform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 874645243}
+  m_LocalRotation: {x: 0, y: 0, z: -0.7071068, w: 0.7071068}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children: []
+  m_Father: {fileID: 429611498}
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: -90}
+  m_AnchorMin: {x: 0.5, y: 0.5}
+  m_AnchorMax: {x: 0.5, y: 0.5}
+  m_AnchoredPosition: {x: 30.8, y: 73.7}
+  m_SizeDelta: {x: 48.3865, y: 22.8421}
+  m_Pivot: {x: 0.5, y: 0.5}
+--- !u!114 &874645245
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 874645243}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: fe87c0e1cc204ed48ad3b37840f39efc, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  m_Material: {fileID: 0}
+  m_Color: {r: 1, g: 1, b: 1, a: 1}
+  m_RaycastTarget: 1
+  m_RaycastPadding: {x: 0, y: 0, z: 0, w: 0}
+  m_Maskable: 1
+  m_OnCullStateChanged:
+    m_PersistentCalls:
+      m_Calls: []
+  m_Sprite: {fileID: 21300000, guid: 4dde859325037d1428d2dd08cbe97a36, type: 3}
+  m_Type: 0
+  m_PreserveAspect: 0
+  m_FillCenter: 1
+  m_FillMethod: 4
+  m_FillAmount: 1
+  m_FillClockwise: 1
+  m_FillOrigin: 0
+  m_UseSpriteMesh: 0
+  m_PixelsPerUnitMultiplier: 1
+--- !u!222 &874645246
+CanvasRenderer:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 874645243}
+  m_CullTransparentMesh: 1
 --- !u!4 &876974634 stripped
 Transform:
   m_CorrespondingSourceObject: {fileID: 8662600407005941723, guid: 4647aa78fd492284199daa99a2f08f5c, type: 3}
@@ -5904,13 +6414,13 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_text: "\u041A\u043E\u043B\u0438\u0447\u0435\u0441\u0442\u0432\u043E \u0435\u0434\u044B,
-    \u043F\u043E\u0442\u0440\u0435\u0431\u043B\u044F\u0435\u043C\u043E\u0439 \u0437\u0430
-    \u0445\u043E\u0434, \u0431\u0443\u0434\u0435\u0442 \u0441\u043D\u0438\u0436\u0435\u043D\u043E
+  m_text: "\u041A\u043E\u043B\u0438\u0447\u0435\u0441\u0442\u0432\u043E \u0442\u043E\u043F\u043B\u0438\u0432\u0430,
+    \u043F\u043E\u0442\u0440\u0435\u0431\u043B\u044F\u0435\u043C\u043E\u0433\u043E
+    \u0437\u0430 \u0445\u043E\u0434, \u0431\u0443\u0434\u0435\u0442 \u0441\u043D\u0438\u0436\u0435\u043D\u043E
     \u043D\u0430 25 \u043F\u0440\u043E\u0446\u0435\u043D\u0442\u043E\u0432"
   m_isRightToLeft: 0
-  m_fontAsset: {fileID: 11400000, guid: 8f586378b4e144a9851e7b34d9b748ee, type: 2}
-  m_sharedMaterial: {fileID: 2180264, guid: 8f586378b4e144a9851e7b34d9b748ee, type: 2}
+  m_fontAsset: {fileID: 11400000, guid: c58b66b91334bea49b27bc8623011b92, type: 2}
+  m_sharedMaterial: {fileID: 4410582916263354714, guid: c58b66b91334bea49b27bc8623011b92, type: 2}
   m_fontSharedMaterials: []
   m_fontMaterial: {fileID: 0}
   m_fontMaterials: []
@@ -6043,8 +6553,8 @@ MonoBehaviour:
       m_Calls: []
   m_text: "\u0445\u043E\u043B\u043E\u0434\u0438\u043B\u044C\u043D\u0438\u043A"
   m_isRightToLeft: 0
-  m_fontAsset: {fileID: 11400000, guid: 8f586378b4e144a9851e7b34d9b748ee, type: 2}
-  m_sharedMaterial: {fileID: 2180264, guid: 8f586378b4e144a9851e7b34d9b748ee, type: 2}
+  m_fontAsset: {fileID: 11400000, guid: c58b66b91334bea49b27bc8623011b92, type: 2}
+  m_sharedMaterial: {fileID: 4410582916263354714, guid: c58b66b91334bea49b27bc8623011b92, type: 2}
   m_fontSharedMaterials: []
   m_fontMaterial: {fileID: 0}
   m_fontMaterials: []
@@ -6246,8 +6756,8 @@ MonoBehaviour:
       m_Calls: []
   m_text: "\u0423\u043B\u0443\u0447\u0448\u0438\u0442\u044C"
   m_isRightToLeft: 0
-  m_fontAsset: {fileID: 11400000, guid: 8f586378b4e144a9851e7b34d9b748ee, type: 2}
-  m_sharedMaterial: {fileID: 2180264, guid: 8f586378b4e144a9851e7b34d9b748ee, type: 2}
+  m_fontAsset: {fileID: 11400000, guid: c58b66b91334bea49b27bc8623011b92, type: 2}
+  m_sharedMaterial: {fileID: 4410582916263354714, guid: c58b66b91334bea49b27bc8623011b92, type: 2}
   m_fontSharedMaterials: []
   m_fontMaterial: {fileID: 0}
   m_fontMaterials: []
@@ -6380,8 +6890,8 @@ MonoBehaviour:
       m_Calls: []
   m_text: "\u0423\u043B\u0443\u0447\u0448\u0435\u043D\u043D\u044B\u0439 \u0434\u0432\u0438\u0433\u0430\u0442\u0435\u043B\u044C"
   m_isRightToLeft: 0
-  m_fontAsset: {fileID: 11400000, guid: 8f586378b4e144a9851e7b34d9b748ee, type: 2}
-  m_sharedMaterial: {fileID: 2180264, guid: 8f586378b4e144a9851e7b34d9b748ee, type: 2}
+  m_fontAsset: {fileID: 11400000, guid: c58b66b91334bea49b27bc8623011b92, type: 2}
+  m_sharedMaterial: {fileID: 4410582916263354714, guid: c58b66b91334bea49b27bc8623011b92, type: 2}
   m_fontSharedMaterials: []
   m_fontMaterial: {fileID: 0}
   m_fontMaterials: []
@@ -6524,6 +7034,74 @@ PrefabInstance:
     m_AddedGameObjects: []
     m_AddedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 4647aa78fd492284199daa99a2f08f5c, type: 3}
+--- !u!1 &946630904
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 946630907}
+  - component: {fileID: 946630906}
+  - component: {fileID: 946630905}
+  m_Layer: 0
+  m_Name: EventSystem
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!114 &946630905
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 946630904}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 4f231c4fb786f3946a6b90b886c48677, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  m_SendPointerHoverToParent: 1
+  m_HorizontalAxis: Horizontal
+  m_VerticalAxis: Vertical
+  m_SubmitButton: Submit
+  m_CancelButton: Cancel
+  m_InputActionsPerSecond: 10
+  m_RepeatDelay: 0.5
+  m_ForceModuleActive: 0
+--- !u!114 &946630906
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 946630904}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 76c392e42b5098c458856cdf6ecaaaa1, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  m_FirstSelected: {fileID: 0}
+  m_sendNavigationEvents: 1
+  m_DragThreshold: 10
+--- !u!4 &946630907
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 946630904}
+  serializedVersion: 2
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children: []
+  m_Father: {fileID: 0}
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1001 &956950552
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -6721,8 +7299,8 @@ MonoBehaviour:
       m_Calls: []
   m_text: "- \u0442\u043E\u043F\u043B\u0438\u0432\u043E \u0438 \u0435\u0434\u0430"
   m_isRightToLeft: 0
-  m_fontAsset: {fileID: 11400000, guid: 8f586378b4e144a9851e7b34d9b748ee, type: 2}
-  m_sharedMaterial: {fileID: 2180264, guid: 8f586378b4e144a9851e7b34d9b748ee, type: 2}
+  m_fontAsset: {fileID: 11400000, guid: c58b66b91334bea49b27bc8623011b92, type: 2}
+  m_sharedMaterial: {fileID: 4410582916263354714, guid: c58b66b91334bea49b27bc8623011b92, type: 2}
   m_fontSharedMaterials: []
   m_fontMaterial: {fileID: 0}
   m_fontMaterials: []
@@ -6865,8 +7443,8 @@ MonoBehaviour:
       m_Calls: []
   m_text: "\u0423\u043B\u0443\u0447\u0448\u0438\u0442\u044C"
   m_isRightToLeft: 0
-  m_fontAsset: {fileID: 11400000, guid: 8f586378b4e144a9851e7b34d9b748ee, type: 2}
-  m_sharedMaterial: {fileID: 2180264, guid: 8f586378b4e144a9851e7b34d9b748ee, type: 2}
+  m_fontAsset: {fileID: 11400000, guid: c58b66b91334bea49b27bc8623011b92, type: 2}
+  m_sharedMaterial: {fileID: 4410582916263354714, guid: c58b66b91334bea49b27bc8623011b92, type: 2}
   m_fontSharedMaterials: []
   m_fontMaterial: {fileID: 0}
   m_fontMaterials: []
@@ -6999,8 +7577,8 @@ MonoBehaviour:
       m_Calls: []
   m_text: "+ \u0440\u0435\u0441"
   m_isRightToLeft: 0
-  m_fontAsset: {fileID: 11400000, guid: 8f586378b4e144a9851e7b34d9b748ee, type: 2}
-  m_sharedMaterial: {fileID: 2180264, guid: 8f586378b4e144a9851e7b34d9b748ee, type: 2}
+  m_fontAsset: {fileID: 11400000, guid: c58b66b91334bea49b27bc8623011b92, type: 2}
+  m_sharedMaterial: {fileID: 4410582916263354714, guid: c58b66b91334bea49b27bc8623011b92, type: 2}
   m_fontSharedMaterials: []
   m_fontMaterial: {fileID: 0}
   m_fontMaterials: []
@@ -7271,8 +7849,8 @@ MonoBehaviour:
       m_Calls: []
   m_text: 88
   m_isRightToLeft: 0
-  m_fontAsset: {fileID: 11400000, guid: 8f586378b4e144a9851e7b34d9b748ee, type: 2}
-  m_sharedMaterial: {fileID: 2180264, guid: 8f586378b4e144a9851e7b34d9b748ee, type: 2}
+  m_fontAsset: {fileID: 11400000, guid: c58b66b91334bea49b27bc8623011b92, type: 2}
+  m_sharedMaterial: {fileID: 4410582916263354714, guid: c58b66b91334bea49b27bc8623011b92, type: 2}
   m_fontSharedMaterials: []
   m_fontMaterial: {fileID: 0}
   m_fontMaterials: []
@@ -7346,6 +7924,81 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1021163262}
   m_CullTransparentMesh: 1
+--- !u!1 &1026200937
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 1026200938}
+  - component: {fileID: 1026200940}
+  - component: {fileID: 1026200939}
+  m_Layer: 5
+  m_Name: Image
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!224 &1026200938
+RectTransform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1026200937}
+  m_LocalRotation: {x: 0, y: 0, z: -0.7071068, w: 0.7071068}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children: []
+  m_Father: {fileID: 429611498}
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: -90}
+  m_AnchorMin: {x: 0.5, y: 0.5}
+  m_AnchorMax: {x: 0.5, y: 0.5}
+  m_AnchoredPosition: {x: -250.4, y: 73.7}
+  m_SizeDelta: {x: 48.3865, y: 22.8421}
+  m_Pivot: {x: 0.5, y: 0.5}
+--- !u!114 &1026200939
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1026200937}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: fe87c0e1cc204ed48ad3b37840f39efc, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  m_Material: {fileID: 0}
+  m_Color: {r: 1, g: 1, b: 1, a: 1}
+  m_RaycastTarget: 1
+  m_RaycastPadding: {x: 0, y: 0, z: 0, w: 0}
+  m_Maskable: 1
+  m_OnCullStateChanged:
+    m_PersistentCalls:
+      m_Calls: []
+  m_Sprite: {fileID: 21300000, guid: 4dde859325037d1428d2dd08cbe97a36, type: 3}
+  m_Type: 0
+  m_PreserveAspect: 0
+  m_FillCenter: 1
+  m_FillMethod: 4
+  m_FillAmount: 1
+  m_FillClockwise: 1
+  m_FillOrigin: 0
+  m_UseSpriteMesh: 0
+  m_PixelsPerUnitMultiplier: 1
+--- !u!222 &1026200940
+CanvasRenderer:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1026200937}
+  m_CullTransparentMesh: 1
 --- !u!4 &1032695713 stripped
 Transform:
   m_CorrespondingSourceObject: {fileID: 8662600407005941723, guid: 4647aa78fd492284199daa99a2f08f5c, type: 3}
@@ -7415,8 +8068,8 @@ MonoBehaviour:
       m_Calls: []
   m_text: "\u0441\u0442\u0430\u043B\u044C\u043D\u0430\u044F \u0431\u0440\u043E\u043D\u044F"
   m_isRightToLeft: 0
-  m_fontAsset: {fileID: 11400000, guid: 8f586378b4e144a9851e7b34d9b748ee, type: 2}
-  m_sharedMaterial: {fileID: 2180264, guid: 8f586378b4e144a9851e7b34d9b748ee, type: 2}
+  m_fontAsset: {fileID: 11400000, guid: c58b66b91334bea49b27bc8623011b92, type: 2}
+  m_sharedMaterial: {fileID: 4410582916263354714, guid: c58b66b91334bea49b27bc8623011b92, type: 2}
   m_fontSharedMaterials: []
   m_fontMaterial: {fileID: 0}
   m_fontMaterials: []
@@ -7787,7 +8440,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 1
+  m_IsActive: 0
 --- !u!224 &1067698252
 RectTransform:
   m_ObjectHideFlags: 0
@@ -7869,8 +8522,8 @@ MonoBehaviour:
       m_Calls: []
   m_text: "- \u0442\u043E\u043F\u043B\u0438\u0432\u043E \u0438 \u0435\u0434\u0430"
   m_isRightToLeft: 0
-  m_fontAsset: {fileID: 11400000, guid: 8f586378b4e144a9851e7b34d9b748ee, type: 2}
-  m_sharedMaterial: {fileID: 2180264, guid: 8f586378b4e144a9851e7b34d9b748ee, type: 2}
+  m_fontAsset: {fileID: 11400000, guid: c58b66b91334bea49b27bc8623011b92, type: 2}
+  m_sharedMaterial: {fileID: 4410582916263354714, guid: c58b66b91334bea49b27bc8623011b92, type: 2}
   m_fontSharedMaterials: []
   m_fontMaterial: {fileID: 0}
   m_fontMaterials: []
@@ -7956,6 +8609,7 @@ GameObject:
   - component: {fileID: 1093305402}
   - component: {fileID: 1093305401}
   - component: {fileID: 1093305400}
+  - component: {fileID: 1093305403}
   m_Layer: 5
   m_Name: Button
   m_TagString: Untagged
@@ -8026,7 +8680,19 @@ MonoBehaviour:
   m_TargetGraphic: {fileID: 1093305401}
   m_OnClick:
     m_PersistentCalls:
-      m_Calls: []
+      m_Calls:
+      - m_Target: {fileID: 1093305403}
+        m_TargetAssemblyTypeName: LevelApply, Assembly-CSharp
+        m_MethodName: LevelPlus
+        m_Mode: 1
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
 --- !u!114 &1093305401
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -8065,6 +8731,19 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1093305398}
   m_CullTransparentMesh: 1
+--- !u!114 &1093305403
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1093305398}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 764f09c19386059438b12cfbbc1eab4f, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  level: 0
 --- !u!1001 &1096261813
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -8223,7 +8902,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 1
+  m_IsActive: 0
 --- !u!224 &1101798492
 RectTransform:
   m_ObjectHideFlags: 0
@@ -8754,7 +9433,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 1
+  m_IsActive: 0
 --- !u!224 &1127155812
 RectTransform:
   m_ObjectHideFlags: 0
@@ -9001,8 +9680,8 @@ MonoBehaviour:
     \u0440\u0435\u0441\u0443\u0440\u0441\u043E\u0432 \u0443\u0432\u0435\u043B\u0438\u0447\u0435\u043D\u043E
     \u043D\u0430 25 \u043F\u0440\u043E\u0446\u0435\u043D\u0442\u043E\u0432"
   m_isRightToLeft: 0
-  m_fontAsset: {fileID: 11400000, guid: 8f586378b4e144a9851e7b34d9b748ee, type: 2}
-  m_sharedMaterial: {fileID: 2180264, guid: 8f586378b4e144a9851e7b34d9b748ee, type: 2}
+  m_fontAsset: {fileID: 11400000, guid: c58b66b91334bea49b27bc8623011b92, type: 2}
+  m_sharedMaterial: {fileID: 4410582916263354714, guid: c58b66b91334bea49b27bc8623011b92, type: 2}
   m_fontSharedMaterials: []
   m_fontMaterial: {fileID: 0}
   m_fontMaterials: []
@@ -9438,6 +10117,7 @@ GameObject:
   - component: {fileID: 1246153891}
   - component: {fileID: 1246153890}
   - component: {fileID: 1246153889}
+  - component: {fileID: 1246153892}
   m_Layer: 5
   m_Name: Button (4)
   m_TagString: Untagged
@@ -9508,7 +10188,19 @@ MonoBehaviour:
   m_TargetGraphic: {fileID: 1246153890}
   m_OnClick:
     m_PersistentCalls:
-      m_Calls: []
+      m_Calls:
+      - m_Target: {fileID: 1246153892}
+        m_TargetAssemblyTypeName: openButtonDescryption, Assembly-CSharp
+        m_MethodName: OpenDescription
+        m_Mode: 1
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
 --- !u!114 &1246153890
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -9547,6 +10239,27 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1246153887}
   m_CullTransparentMesh: 1
+--- !u!114 &1246153892
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1246153887}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: bbaf014d8576ad148ab70442d670168e, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  openMenu: {fileID: 1101798491}
+  closeMenu:
+  - {fileID: 47048477}
+  - {fileID: 1067698251}
+  - {fileID: 1927401684}
+  - {fileID: 1705268096}
+  - {fileID: 1666151713}
+  - {fileID: 1127155811}
+  - {fileID: 1632539122}
 --- !u!1001 &1252674949
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -9826,10 +10539,10 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_text: "+ \u0445\u0440 \u0431\u0430\u0448\u043D\u0438"
+  m_text: "+ \u0445\u0440 \u0431\u0430\u0448\u043D\u0438 "
   m_isRightToLeft: 0
-  m_fontAsset: {fileID: 11400000, guid: 8f586378b4e144a9851e7b34d9b748ee, type: 2}
-  m_sharedMaterial: {fileID: 2180264, guid: 8f586378b4e144a9851e7b34d9b748ee, type: 2}
+  m_fontAsset: {fileID: 11400000, guid: c58b66b91334bea49b27bc8623011b92, type: 2}
+  m_sharedMaterial: {fileID: 4410582916263354714, guid: c58b66b91334bea49b27bc8623011b92, type: 2}
   m_fontSharedMaterials: []
   m_fontMaterial: {fileID: 0}
   m_fontMaterials: []
@@ -10216,6 +10929,7 @@ GameObject:
   - component: {fileID: 1354024978}
   - component: {fileID: 1354024977}
   - component: {fileID: 1354024976}
+  - component: {fileID: 1354024979}
   m_Layer: 5
   m_Name: Button (1)
   m_TagString: Untagged
@@ -10286,7 +11000,19 @@ MonoBehaviour:
   m_TargetGraphic: {fileID: 1354024977}
   m_OnClick:
     m_PersistentCalls:
-      m_Calls: []
+      m_Calls:
+      - m_Target: {fileID: 1354024979}
+        m_TargetAssemblyTypeName: openButtonDescryption, Assembly-CSharp
+        m_MethodName: OpenDescription
+        m_Mode: 1
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
 --- !u!114 &1354024977
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -10325,6 +11051,27 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1354024974}
   m_CullTransparentMesh: 1
+--- !u!114 &1354024979
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1354024974}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: bbaf014d8576ad148ab70442d670168e, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  openMenu: {fileID: 1705268096}
+  closeMenu:
+  - {fileID: 47048477}
+  - {fileID: 1101798491}
+  - {fileID: 1067698251}
+  - {fileID: 1927401684}
+  - {fileID: 1666151713}
+  - {fileID: 1127155811}
+  - {fileID: 1632539122}
 --- !u!4 &1355818833 stripped
 Transform:
   m_CorrespondingSourceObject: {fileID: 8662600407005941723, guid: 4647aa78fd492284199daa99a2f08f5c, type: 3}
@@ -10342,6 +11089,7 @@ GameObject:
   - component: {fileID: 1361176732}
   - component: {fileID: 1361176731}
   - component: {fileID: 1361176730}
+  - component: {fileID: 1361176733}
   m_Layer: 5
   m_Name: Button
   m_TagString: Untagged
@@ -10412,7 +11160,19 @@ MonoBehaviour:
   m_TargetGraphic: {fileID: 1361176731}
   m_OnClick:
     m_PersistentCalls:
-      m_Calls: []
+      m_Calls:
+      - m_Target: {fileID: 1361176733}
+        m_TargetAssemblyTypeName: LevelApply, Assembly-CSharp
+        m_MethodName: LevelPlus
+        m_Mode: 1
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
 --- !u!114 &1361176731
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -10451,6 +11211,19 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1361176728}
   m_CullTransparentMesh: 1
+--- !u!114 &1361176733
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1361176728}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 764f09c19386059438b12cfbbc1eab4f, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  level: 7
 --- !u!4 &1362772988 stripped
 Transform:
   m_CorrespondingSourceObject: {fileID: 8662600407005941723, guid: 4647aa78fd492284199daa99a2f08f5c, type: 3}
@@ -10843,6 +11616,7 @@ GameObject:
   - component: {fileID: 1458834467}
   - component: {fileID: 1458834466}
   - component: {fileID: 1458834465}
+  - component: {fileID: 1458834468}
   m_Layer: 5
   m_Name: Button
   m_TagString: Untagged
@@ -10913,7 +11687,19 @@ MonoBehaviour:
   m_TargetGraphic: {fileID: 1458834466}
   m_OnClick:
     m_PersistentCalls:
-      m_Calls: []
+      m_Calls:
+      - m_Target: {fileID: 1458834468}
+        m_TargetAssemblyTypeName: LevelApply, Assembly-CSharp
+        m_MethodName: LevelPlus
+        m_Mode: 1
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
 --- !u!114 &1458834466
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -10952,6 +11738,19 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1458834463}
   m_CullTransparentMesh: 1
+--- !u!114 &1458834468
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1458834463}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 764f09c19386059438b12cfbbc1eab4f, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  level: 4
 --- !u!1001 &1480614250
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -11038,6 +11837,7 @@ GameObject:
   - component: {fileID: 1494984569}
   - component: {fileID: 1494984568}
   - component: {fileID: 1494984567}
+  - component: {fileID: 1494984570}
   m_Layer: 5
   m_Name: Button
   m_TagString: Untagged
@@ -11108,7 +11908,19 @@ MonoBehaviour:
   m_TargetGraphic: {fileID: 1494984568}
   m_OnClick:
     m_PersistentCalls:
-      m_Calls: []
+      m_Calls:
+      - m_Target: {fileID: 1494984570}
+        m_TargetAssemblyTypeName: LevelApply, Assembly-CSharp
+        m_MethodName: LevelPlus
+        m_Mode: 1
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
 --- !u!114 &1494984568
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -11147,6 +11959,19 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1494984565}
   m_CullTransparentMesh: 1
+--- !u!114 &1494984570
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1494984565}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 764f09c19386059438b12cfbbc1eab4f, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  level: 3
 --- !u!1001 &1505480572
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -11280,8 +12105,8 @@ MonoBehaviour:
       m_Calls: []
   m_text: "+ \u0445\u0440 \u0431\u0430\u0448\u043D\u0438"
   m_isRightToLeft: 0
-  m_fontAsset: {fileID: 11400000, guid: 8f586378b4e144a9851e7b34d9b748ee, type: 2}
-  m_sharedMaterial: {fileID: 2180264, guid: 8f586378b4e144a9851e7b34d9b748ee, type: 2}
+  m_fontAsset: {fileID: 11400000, guid: c58b66b91334bea49b27bc8623011b92, type: 2}
+  m_sharedMaterial: {fileID: 4410582916263354714, guid: c58b66b91334bea49b27bc8623011b92, type: 2}
   m_fontSharedMaterials: []
   m_fontMaterial: {fileID: 0}
   m_fontMaterials: []
@@ -11416,8 +12241,8 @@ MonoBehaviour:
     \u0440\u0435\u0441\u0443\u0440\u0441\u043E\u0432 \u0443\u0432\u0435\u043B\u0438\u0447\u0435\u043D\u043E
     \u043D\u0430 50 \u043F\u0440\u043E\u0446\u0435\u043D\u0442\u043E\u0432"
   m_isRightToLeft: 0
-  m_fontAsset: {fileID: 11400000, guid: 8f586378b4e144a9851e7b34d9b748ee, type: 2}
-  m_sharedMaterial: {fileID: 2180264, guid: 8f586378b4e144a9851e7b34d9b748ee, type: 2}
+  m_fontAsset: {fileID: 11400000, guid: c58b66b91334bea49b27bc8623011b92, type: 2}
+  m_sharedMaterial: {fileID: 4410582916263354714, guid: c58b66b91334bea49b27bc8623011b92, type: 2}
   m_fontSharedMaterials: []
   m_fontMaterial: {fileID: 0}
   m_fontMaterials: []
@@ -11580,8 +12405,8 @@ MonoBehaviour:
       m_Calls: []
   m_text: "\u0423\u043B\u0443\u0447\u0448\u0438\u0442\u044C"
   m_isRightToLeft: 0
-  m_fontAsset: {fileID: 11400000, guid: 8f586378b4e144a9851e7b34d9b748ee, type: 2}
-  m_sharedMaterial: {fileID: 2180264, guid: 8f586378b4e144a9851e7b34d9b748ee, type: 2}
+  m_fontAsset: {fileID: 11400000, guid: c58b66b91334bea49b27bc8623011b92, type: 2}
+  m_sharedMaterial: {fileID: 4410582916263354714, guid: c58b66b91334bea49b27bc8623011b92, type: 2}
   m_fontSharedMaterials: []
   m_fontMaterial: {fileID: 0}
   m_fontMaterials: []
@@ -11755,7 +12580,7 @@ Transform:
   m_GameObject: {fileID: 1566232106}
   serializedVersion: 2
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 23.2804, y: -0.01, z: -13.773}
+  m_LocalPosition: {x: 23.2804, y: -0.25, z: -13.773}
   m_LocalScale: {x: 9.805619, y: 1, z: 6.7553306}
   m_ConstrainProportionsScale: 0
   m_Children: []
@@ -12173,6 +12998,7 @@ GameObject:
   - component: {fileID: 1618877901}
   - component: {fileID: 1618877900}
   - component: {fileID: 1618877899}
+  - component: {fileID: 1618877902}
   m_Layer: 5
   m_Name: Button
   m_TagString: Untagged
@@ -12243,7 +13069,19 @@ MonoBehaviour:
   m_TargetGraphic: {fileID: 1618877900}
   m_OnClick:
     m_PersistentCalls:
-      m_Calls: []
+      m_Calls:
+      - m_Target: {fileID: 1618877902}
+        m_TargetAssemblyTypeName: LevelApply, Assembly-CSharp
+        m_MethodName: LevelPlus
+        m_Mode: 1
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
 --- !u!114 &1618877900
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -12282,6 +13120,19 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1618877897}
   m_CullTransparentMesh: 1
+--- !u!114 &1618877902
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1618877897}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 764f09c19386059438b12cfbbc1eab4f, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  level: 2
 --- !u!1 &1629000207
 GameObject:
   m_ObjectHideFlags: 0
@@ -12341,8 +13192,8 @@ MonoBehaviour:
       m_Calls: []
   m_text: "\u0423\u043B\u0443\u0447\u0448\u0438\u0442\u044C"
   m_isRightToLeft: 0
-  m_fontAsset: {fileID: 11400000, guid: 8f586378b4e144a9851e7b34d9b748ee, type: 2}
-  m_sharedMaterial: {fileID: 2180264, guid: 8f586378b4e144a9851e7b34d9b748ee, type: 2}
+  m_fontAsset: {fileID: 11400000, guid: c58b66b91334bea49b27bc8623011b92, type: 2}
+  m_sharedMaterial: {fileID: 4410582916263354714, guid: c58b66b91334bea49b27bc8623011b92, type: 2}
   m_fontSharedMaterials: []
   m_fontMaterial: {fileID: 0}
   m_fontMaterials: []
@@ -12431,7 +13282,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 1
+  m_IsActive: 0
 --- !u!224 &1632539123
 RectTransform:
   m_ObjectHideFlags: 0
@@ -12720,8 +13571,8 @@ MonoBehaviour:
       m_Calls: []
   m_text: 88
   m_isRightToLeft: 0
-  m_fontAsset: {fileID: 11400000, guid: 8f586378b4e144a9851e7b34d9b748ee, type: 2}
-  m_sharedMaterial: {fileID: 2180264, guid: 8f586378b4e144a9851e7b34d9b748ee, type: 2}
+  m_fontAsset: {fileID: 11400000, guid: c58b66b91334bea49b27bc8623011b92, type: 2}
+  m_sharedMaterial: {fileID: 4410582916263354714, guid: c58b66b91334bea49b27bc8623011b92, type: 2}
   m_fontSharedMaterials: []
   m_fontMaterial: {fileID: 0}
   m_fontMaterials: []
@@ -12810,7 +13661,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 1
+  m_IsActive: 0
 --- !u!224 &1666151714
 RectTransform:
   m_ObjectHideFlags: 0
@@ -12897,8 +13748,8 @@ MonoBehaviour:
       m_Calls: []
   m_text: "\u043F\u0440\u0438\u043C\u0438\u0442\u0438\u0432\u043D\u044B\u0435 \u0438\u043D\u0441\u0442\u0440\u0443\u043C\u0435\u043D\u0442\u044B"
   m_isRightToLeft: 0
-  m_fontAsset: {fileID: 11400000, guid: 8f586378b4e144a9851e7b34d9b748ee, type: 2}
-  m_sharedMaterial: {fileID: 2180264, guid: 8f586378b4e144a9851e7b34d9b748ee, type: 2}
+  m_fontAsset: {fileID: 11400000, guid: c58b66b91334bea49b27bc8623011b92, type: 2}
+  m_sharedMaterial: {fileID: 4410582916263354714, guid: c58b66b91334bea49b27bc8623011b92, type: 2}
   m_fontSharedMaterials: []
   m_fontMaterial: {fileID: 0}
   m_fontMaterials: []
@@ -13056,7 +13907,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 1
+  m_IsActive: 0
 --- !u!224 &1705268097
 RectTransform:
   m_ObjectHideFlags: 0
@@ -13280,8 +14131,8 @@ MonoBehaviour:
       m_Calls: []
   m_text: "\u0423\u043B\u0443\u0447\u0448\u0438\u0442\u044C"
   m_isRightToLeft: 0
-  m_fontAsset: {fileID: 11400000, guid: 8f586378b4e144a9851e7b34d9b748ee, type: 2}
-  m_sharedMaterial: {fileID: 2180264, guid: 8f586378b4e144a9851e7b34d9b748ee, type: 2}
+  m_fontAsset: {fileID: 11400000, guid: c58b66b91334bea49b27bc8623011b92, type: 2}
+  m_sharedMaterial: {fileID: 4410582916263354714, guid: c58b66b91334bea49b27bc8623011b92, type: 2}
   m_fontSharedMaterials: []
   m_fontMaterial: {fileID: 0}
   m_fontMaterials: []
@@ -13464,6 +14315,7 @@ GameObject:
   - component: {fileID: 1744528855}
   - component: {fileID: 1744528854}
   - component: {fileID: 1744528853}
+  - component: {fileID: 1744528856}
   m_Layer: 5
   m_Name: Button (5)
   m_TagString: Untagged
@@ -13534,7 +14386,19 @@ MonoBehaviour:
   m_TargetGraphic: {fileID: 1744528854}
   m_OnClick:
     m_PersistentCalls:
-      m_Calls: []
+      m_Calls:
+      - m_Target: {fileID: 1744528856}
+        m_TargetAssemblyTypeName: openButtonDescryption, Assembly-CSharp
+        m_MethodName: OpenDescription
+        m_Mode: 1
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
 --- !u!114 &1744528854
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -13573,6 +14437,27 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1744528851}
   m_CullTransparentMesh: 1
+--- !u!114 &1744528856
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1744528851}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: bbaf014d8576ad148ab70442d670168e, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  openMenu: {fileID: 1127155811}
+  closeMenu:
+  - {fileID: 47048477}
+  - {fileID: 1101798491}
+  - {fileID: 1067698251}
+  - {fileID: 1927401684}
+  - {fileID: 1705268096}
+  - {fileID: 1666151713}
+  - {fileID: 1632539122}
 --- !u!1001 &1750806163
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -14030,8 +14915,8 @@ MonoBehaviour:
       m_Calls: []
   m_text: "\u0436\u0435\u043B\u0435\u0437\u043D\u044B\u0435 \u043A\u0440\u0435\u043F\u043B\u0435\u043D\u0438\u044F"
   m_isRightToLeft: 0
-  m_fontAsset: {fileID: 11400000, guid: 8f586378b4e144a9851e7b34d9b748ee, type: 2}
-  m_sharedMaterial: {fileID: 2180264, guid: 8f586378b4e144a9851e7b34d9b748ee, type: 2}
+  m_fontAsset: {fileID: 11400000, guid: c58b66b91334bea49b27bc8623011b92, type: 2}
+  m_sharedMaterial: {fileID: 4410582916263354714, guid: c58b66b91334bea49b27bc8623011b92, type: 2}
   m_fontSharedMaterials: []
   m_fontMaterial: {fileID: 0}
   m_fontMaterials: []
@@ -14381,8 +15266,8 @@ MonoBehaviour:
       m_Calls: []
   m_text: 88
   m_isRightToLeft: 0
-  m_fontAsset: {fileID: 11400000, guid: 8f586378b4e144a9851e7b34d9b748ee, type: 2}
-  m_sharedMaterial: {fileID: 2180264, guid: 8f586378b4e144a9851e7b34d9b748ee, type: 2}
+  m_fontAsset: {fileID: 11400000, guid: c58b66b91334bea49b27bc8623011b92, type: 2}
+  m_sharedMaterial: {fileID: 4410582916263354714, guid: c58b66b91334bea49b27bc8623011b92, type: 2}
   m_fontSharedMaterials: []
   m_fontMaterial: {fileID: 0}
   m_fontMaterials: []
@@ -14586,6 +15471,7 @@ GameObject:
   - component: {fileID: 1854801102}
   - component: {fileID: 1854801101}
   - component: {fileID: 1854801100}
+  - component: {fileID: 1854801103}
   m_Layer: 5
   m_Name: Button (2)
   m_TagString: Untagged
@@ -14656,7 +15542,19 @@ MonoBehaviour:
   m_TargetGraphic: {fileID: 1854801101}
   m_OnClick:
     m_PersistentCalls:
-      m_Calls: []
+      m_Calls:
+      - m_Target: {fileID: 1854801103}
+        m_TargetAssemblyTypeName: openButtonDescryption, Assembly-CSharp
+        m_MethodName: OpenDescription
+        m_Mode: 1
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
 --- !u!114 &1854801101
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -14695,6 +15593,27 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1854801098}
   m_CullTransparentMesh: 1
+--- !u!114 &1854801103
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1854801098}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: bbaf014d8576ad148ab70442d670168e, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  openMenu: {fileID: 1666151713}
+  closeMenu:
+  - {fileID: 47048477}
+  - {fileID: 1101798491}
+  - {fileID: 1067698251}
+  - {fileID: 1927401684}
+  - {fileID: 1705268096}
+  - {fileID: 1127155811}
+  - {fileID: 1632539122}
 --- !u!1001 &1876264255
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -14781,6 +15700,7 @@ GameObject:
   - component: {fileID: 1905099235}
   - component: {fileID: 1905099234}
   - component: {fileID: 1905099233}
+  - component: {fileID: 1905099236}
   m_Layer: 5
   m_Name: Button
   m_TagString: Untagged
@@ -14851,7 +15771,19 @@ MonoBehaviour:
   m_TargetGraphic: {fileID: 1905099234}
   m_OnClick:
     m_PersistentCalls:
-      m_Calls: []
+      m_Calls:
+      - m_Target: {fileID: 1905099236}
+        m_TargetAssemblyTypeName: openButtonDescryption, Assembly-CSharp
+        m_MethodName: OpenDescription
+        m_Mode: 1
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
 --- !u!114 &1905099234
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -14890,6 +15822,27 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1905099231}
   m_CullTransparentMesh: 1
+--- !u!114 &1905099236
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1905099231}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: bbaf014d8576ad148ab70442d670168e, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  openMenu: {fileID: 1927401684}
+  closeMenu:
+  - {fileID: 47048477}
+  - {fileID: 1101798491}
+  - {fileID: 1067698251}
+  - {fileID: 1705268096}
+  - {fileID: 1666151713}
+  - {fileID: 1127155811}
+  - {fileID: 1632539122}
 --- !u!4 &1905446473 stripped
 Transform:
   m_CorrespondingSourceObject: {fileID: 8662600407005941723, guid: 4647aa78fd492284199daa99a2f08f5c, type: 3}
@@ -14979,7 +15932,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 1
+  m_IsActive: 0
 --- !u!224 &1927401685
 RectTransform:
   m_ObjectHideFlags: 0
@@ -15061,8 +16014,8 @@ MonoBehaviour:
       m_Calls: []
   m_text: "\u0423\u043B\u0443\u0447\u0448\u0438\u0442\u044C"
   m_isRightToLeft: 0
-  m_fontAsset: {fileID: 11400000, guid: 8f586378b4e144a9851e7b34d9b748ee, type: 2}
-  m_sharedMaterial: {fileID: 2180264, guid: 8f586378b4e144a9851e7b34d9b748ee, type: 2}
+  m_fontAsset: {fileID: 11400000, guid: c58b66b91334bea49b27bc8623011b92, type: 2}
+  m_sharedMaterial: {fileID: 4410582916263354714, guid: c58b66b91334bea49b27bc8623011b92, type: 2}
   m_fontSharedMaterials: []
   m_fontMaterial: {fileID: 0}
   m_fontMaterials: []
@@ -15197,8 +16150,8 @@ MonoBehaviour:
     \u0432 \u0431\u0438\u0442\u0432\u0430\u0445 \u0443\u0432\u0435\u043B\u0438\u0447\u0435\u043D\u043E
     \u043D\u0430 10 \u043F\u0440\u043E\u0446\u0435\u043D\u0442\u043E\u0432"
   m_isRightToLeft: 0
-  m_fontAsset: {fileID: 11400000, guid: 8f586378b4e144a9851e7b34d9b748ee, type: 2}
-  m_sharedMaterial: {fileID: 2180264, guid: 8f586378b4e144a9851e7b34d9b748ee, type: 2}
+  m_fontAsset: {fileID: 11400000, guid: c58b66b91334bea49b27bc8623011b92, type: 2}
+  m_sharedMaterial: {fileID: 4410582916263354714, guid: c58b66b91334bea49b27bc8623011b92, type: 2}
   m_fontSharedMaterials: []
   m_fontMaterial: {fileID: 0}
   m_fontMaterials: []
@@ -15622,8 +16575,8 @@ MonoBehaviour:
       m_Calls: []
   m_text: "\u0434\u0435\u0440\u0435\u0432\u044F\u043D\u043D\u0430\u044F \u043E\u0431\u0448\u0438\u0432\u043A\u0430"
   m_isRightToLeft: 0
-  m_fontAsset: {fileID: 11400000, guid: 8f586378b4e144a9851e7b34d9b748ee, type: 2}
-  m_sharedMaterial: {fileID: 2180264, guid: 8f586378b4e144a9851e7b34d9b748ee, type: 2}
+  m_fontAsset: {fileID: 11400000, guid: c58b66b91334bea49b27bc8623011b92, type: 2}
+  m_sharedMaterial: {fileID: 4410582916263354714, guid: c58b66b91334bea49b27bc8623011b92, type: 2}
   m_fontSharedMaterials: []
   m_fontMaterial: {fileID: 0}
   m_fontMaterials: []
@@ -15835,8 +16788,8 @@ MonoBehaviour:
       m_Calls: []
   m_text: "+ \u0445\u0440 \u0431\u0430\u0448\u043D\u0438"
   m_isRightToLeft: 0
-  m_fontAsset: {fileID: 11400000, guid: 8f586378b4e144a9851e7b34d9b748ee, type: 2}
-  m_sharedMaterial: {fileID: 2180264, guid: 8f586378b4e144a9851e7b34d9b748ee, type: 2}
+  m_fontAsset: {fileID: 11400000, guid: c58b66b91334bea49b27bc8623011b92, type: 2}
+  m_sharedMaterial: {fileID: 4410582916263354714, guid: c58b66b91334bea49b27bc8623011b92, type: 2}
   m_fontSharedMaterials: []
   m_fontMaterial: {fileID: 0}
   m_fontMaterials: []
@@ -16302,6 +17255,7 @@ GameObject:
   - component: {fileID: 2037657103}
   - component: {fileID: 2037657102}
   - component: {fileID: 2037657101}
+  - component: {fileID: 2037657104}
   m_Layer: 5
   m_Name: Button (3)
   m_TagString: Untagged
@@ -16372,7 +17326,19 @@ MonoBehaviour:
   m_TargetGraphic: {fileID: 2037657102}
   m_OnClick:
     m_PersistentCalls:
-      m_Calls: []
+      m_Calls:
+      - m_Target: {fileID: 2037657104}
+        m_TargetAssemblyTypeName: openButtonDescryption, Assembly-CSharp
+        m_MethodName: OpenDescription
+        m_Mode: 1
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
 --- !u!114 &2037657102
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -16411,6 +17377,27 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 2037657099}
   m_CullTransparentMesh: 1
+--- !u!114 &2037657104
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2037657099}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: bbaf014d8576ad148ab70442d670168e, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  openMenu: {fileID: 1067698251}
+  closeMenu:
+  - {fileID: 47048477}
+  - {fileID: 1101798491}
+  - {fileID: 1927401684}
+  - {fileID: 1705268096}
+  - {fileID: 1666151713}
+  - {fileID: 1127155811}
+  - {fileID: 1632539122}
 --- !u!1 &2039508558
 GameObject:
   m_ObjectHideFlags: 0
@@ -16983,3 +17970,6 @@ SceneRoots:
   - {fileID: 1055584746}
   - {fileID: 241207378}
   - {fileID: 1566232110}
+  - {fileID: 423551896}
+  - {fileID: 946630907}
+  - {fileID: 226881801}

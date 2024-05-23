@@ -4,12 +4,13 @@ using UnityEngine;
 
 public class PlayerController : MonoBehaviour
 {
-    [SerializeField] float maxDistance;
+    public float maxDistance = 8;
     [SerializeField] Camera camera;
     [SerializeField] float speed;
 
     private float _distance;
     private Vector3 _newTransform;
+
 
     private void Update()
     {
@@ -19,6 +20,8 @@ public class PlayerController : MonoBehaviour
 
     private void CellTransform()
     {
+        maxDistance = PlayerPrefs.GetInt("hodDistanse");
+
         var direction = camera.ScreenPointToRay(Input.mousePosition);
 
         RaycastHit hit;
