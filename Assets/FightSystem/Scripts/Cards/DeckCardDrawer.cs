@@ -6,11 +6,16 @@ using UnityEngine.UI;
 public class DeckCardDrawer : MonoBehaviour
 {
     [SerializeField] private TextMeshProUGUI _unitCost;
+    [SerializeField] private TextMeshProUGUI _unitDamage;
+    [SerializeField] private TextMeshProUGUI _unitHealth;
+    [SerializeField] private Image _unitSprite;
 
     private Image _spriteRenderer;
     private Button _button;
 
     private Card _card;
+
+    private Vector2 _baseScale;
 
     private Color selectColor => new Color(0.7f, 0.7f, 0.7f);
     private Color unselectColor => Color.white;
@@ -24,9 +29,12 @@ public class DeckCardDrawer : MonoBehaviour
             _card = value;
             if (value != null)
             {
-                _spriteRenderer.sprite = value.Sprite;
+                _unitSprite.sprite = value.Sprite;
                 Material = value.Material;
+
                 _unitCost.text = value.Cost.ToString();
+                _unitDamage.text = value.Damage.ToString();
+                _unitHealth.text = value.Health.ToString();
             }
             else
             {
@@ -59,6 +67,8 @@ public class DeckCardDrawer : MonoBehaviour
         transform = GetComponent<RectTransform>();
         _spriteRenderer = GetComponent<Image>();
         _button = GetComponent<Button>();
+
+        _baseScale = transform.localScale;
     }
 
     public void AddEventOnClick(UnityAction func) =>
@@ -69,13 +79,15 @@ public class DeckCardDrawer : MonoBehaviour
         if (_card == null)
             return null;
         _spriteRenderer.color = selectColor;
-        transform.localScale = new Vector2(0.9f, 0.9f);
+        _unitSprite.color = selectColor;
+        transform.localScale = new Vector2(1.2f, 1.2f);
         return _card;
     }
 
     public void Unselect()
     {
         _spriteRenderer.color = unselectColor;
-        transform.localScale = Vector2.one;
+        _unitSprite.color = unselectColor;
+        transform.localScale = _baseScale;
     }
 }

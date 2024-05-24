@@ -5,6 +5,7 @@ using UnityEngine.AI;
 public class MovementController : MonoBehaviour
 {
     [SerializeField] private float _speed;
+    [SerializeField] private Animator _animator;
 
     private TargetFinder _targetFinder;
     private NavMeshAgent _aiAgent;
@@ -35,9 +36,16 @@ public class MovementController : MonoBehaviour
         if (CurrentTarget == null)
         {
             _aiAgent.ResetPath();
-            return;
         }
+        else
+            _aiAgent.SetDestination(CurrentTarget.position);
 
-        _aiAgent.SetDestination(CurrentTarget.position);
+        SetAnimation();
     }   
+
+    private void SetAnimation()
+    {
+        bool state = CurrentTarget != null && _aiAgent.remainingDistance > _aiAgent.stoppingDistance;
+        _animator.SetBool("HasPath", state);
+    }
 }

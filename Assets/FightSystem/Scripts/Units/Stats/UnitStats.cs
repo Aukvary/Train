@@ -7,8 +7,6 @@ public class UnitStats : MonoBehaviour
 {
     [SerializeField] private Teams _team;
 
-    private SpriteRenderer _spriteRenderer;
-
     private AttackController _attackController;
     private MovementController _movementController;
     private Health _health;
@@ -24,20 +22,27 @@ public class UnitStats : MonoBehaviour
         {
             _team = value;
 
-            if (value == Teams.Red)
+            if (value == Teams.Red && transform.localScale.x > 0)
             {
-                _spriteRenderer.color = new Color(0.88f, 0.345f, 0.345f);
+                Vector3 bas = transform.localScale;
+                bas[0] *= -1;
             }
-            else
+            else if(value == Teams.Red && transform.localScale.x < 0)
             {
-                _spriteRenderer.color = new Color(0.796f, 0.973f, 0.647f);
+                Vector3 bas = transform.localScale;
+                bas[0] *= -1;
             }
         }
     }
 
     public float CurrentDamage
     {
-        get => _attackController.Damage;
+        get
+        {
+            if(_attackController == null)
+                return GetComponent<AttackController>().Damage;
+            return _attackController.Damage;
+        }
 
         set => _attackController.Damage = value;
     }
@@ -65,7 +70,12 @@ public class UnitStats : MonoBehaviour
 
     public float CurrentHealth
     {
-        get => _health.UnitHealth;
+        get
+        {
+            if(_health == null)
+                return GetComponent<PlayerHealth>().UnitHealth;
+            return _health.UnitHealth;
+        }
 
         set => _health.UnitHealth = value;
     }
@@ -74,7 +84,6 @@ public class UnitStats : MonoBehaviour
 
     private void Awake()
     {
-        _spriteRenderer = GetComponent<SpriteRenderer>();
         _attackController = GetComponent<AttackController>();
         _movementController = GetComponent<MovementController>();
         _health = GetComponent<Health>();

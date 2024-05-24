@@ -1,7 +1,4 @@
-using System;
 using System.Collections;
-using System.Collections.Generic;
-using Unity.VisualScripting;
 using UnityEngine;
 
 public abstract class AttackController : MonoBehaviour
@@ -10,6 +7,10 @@ public abstract class AttackController : MonoBehaviour
     [SerializeField, Min(0)] private float _delay;
     [SerializeField, Min(0)] private float _range;
     [SerializeField] private Buff _attackBuff;
+
+    [Space(30)]
+
+    [SerializeField] private Animator _animator;
 
     private TargetFinder _targetFinder;
 
@@ -47,13 +48,14 @@ public abstract class AttackController : MonoBehaviour
     }
     private IEnumerator SetAttack()
     {
-        while(true)
+        while (true)
         {
             if (Target == null || Vector3.Distance(transform.position, Target.position) > Range)
             {
                 yield return null;
                 continue;
             }
+            _animator.SetTrigger("Attack");
             Attack();
             SetBuff(Target.GetComponent<UnitStats>());
             yield return new WaitForSeconds(Delay);
