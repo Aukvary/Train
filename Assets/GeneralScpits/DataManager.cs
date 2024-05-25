@@ -15,11 +15,17 @@ public static class DataManager
         _items = invenory.item;
         invenory.transform.position = _lastPosition;
 
-        SceneManager.LoadScene((int) Scenes.FightScene);
+        SceneManager.LoadScene((int)Scenes.FightScene);
     }
 
     public static void GotoMapScene()
     {
+        SceneManager.LoadScene((int)Scenes.MapScene);
+    }
 
+    public static void DeleteData()
+    {
+        _items = null;
+        _lastPosition = default;
     }
 }
