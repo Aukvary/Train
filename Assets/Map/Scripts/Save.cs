@@ -7,12 +7,15 @@ public class Save : MonoBehaviour
     // Start is called before the first frame update
     void Awake()
     {
-        PlayerPrefs.DeleteAll();
+        //PlayerPrefs.DeleteAll();
     }
 
     private void Start()
     {
-        PlayerPrefs.SetInt("hodDistanse",8);
+        if (PlayerPrefs.GetInt("hodDistanse") != 16)
+        {
+            PlayerPrefs.SetInt("hodDistanse",8);
+        }
     }
     
     

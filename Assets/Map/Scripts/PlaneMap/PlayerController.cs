@@ -10,7 +10,12 @@ public class PlayerController : MonoBehaviour
 
     private float _distance;
     private Vector3 _newTransform;
+    private MinusFoodAndFuel _minusFoodAndFuel;
 
+    private void Start()
+    {
+        _minusFoodAndFuel = GetComponent<MinusFoodAndFuel>();
+    }
 
     private void Update()
     {
@@ -34,6 +39,9 @@ public class PlayerController : MonoBehaviour
 
             if (Input.GetMouseButtonDown(0) && _distance <= maxDistance && isCell != null)
             {
+                _minusFoodAndFuel.FoodAndFuelMinus(2, 0);
+                _minusFoodAndFuel.FoodAndFuelMinus(2, 4);
+
                 _newTransform = cell.transform.position;
                 transform.LookAt(_newTransform);
                 Debug.Log("pon");

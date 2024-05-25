@@ -38,10 +38,12 @@ public class LevelApply : MonoBehaviour
         if (level == Level.fuelAndFood1)
         {
             PlayerPrefs.SetInt("fuelAndFood1Button", 1);
+            PlayerPrefs.SetInt("foodMinus", 1);
         }
         if (level == Level.fuelAndFood2 && PlayerPrefs.GetInt("fuelAndFood1Button") == 1)
         {
             PlayerPrefs.SetInt("fuelAndFood2Button", 1);
+            PlayerPrefs.SetInt("fuelMinus", 1);
         }
         if (level == Level.resourse1)
         {

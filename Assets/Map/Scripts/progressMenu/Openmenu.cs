@@ -6,6 +6,7 @@ public class Openmenu : MonoBehaviour
 {
     [SerializeField] GameObject progressMenu;
     [SerializeField] List<GameObject> closeMenu;
+    [SerializeField] GameObject gameOverMenu;
     
     [SerializeField] CameraMovement cameraMove;
     [SerializeField] PlayerController playerController;
@@ -30,5 +31,10 @@ public class Openmenu : MonoBehaviour
             }
         }
 
+        if (gameOverMenu.activeSelf == true)
+        {
+            cameraMove.GetComponent<CameraMovement>().enabled = false;
+            playerController.GetComponent<PlayerController>().enabled = false;
+        }
     }
 }
