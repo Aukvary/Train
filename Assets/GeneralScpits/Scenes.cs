@@ -1,5 +1,8 @@
 enum Scenes
 {
-    MapScene = 0, 
-    FightScene = 1
+    MainMenu = 0,
+    MapScene,
+    FightScene,
+    Options,
+    GameMenu
 }
