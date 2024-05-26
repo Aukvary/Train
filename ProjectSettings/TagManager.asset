@@ -41,9 +41,18 @@ TagManager:
   - name: Default
     uniqueID: 0
     locked: 0
-  - name: body
+  - name: Dugger
     uniqueID: 3502527717
     locked: 0
-  - name: other
-    uniqueID: 3198537543
+  - name: Pistol
+    uniqueID: 2243421191
+    locked: 0
+  - name: Bleedin
+    uniqueID: 3323930651
+    locked: 0
+  - name: Med
+    uniqueID: 3071238213
+    locked: 0
+  - name: Tower
+    uniqueID: 2050422557
     locked: 0

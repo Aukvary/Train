@@ -13,5 +13,5 @@ MonoBehaviour:
   m_Name: BleedingBuff
   m_EditorClassIdentifier: 
   _duration: 1
-  _damageMultiplier: 0.3
+  _damageMultiplier: 0.7
   _multiplierMultiply: 1.5

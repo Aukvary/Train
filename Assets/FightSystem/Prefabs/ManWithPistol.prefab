@@ -536,13 +536,14 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 4174111625389340746}
   serializedVersion: 2
-  m_LocalRotation: {x: -0.20321886, y: -0.16027924, z: 0.5981701, w: 0.7584229}
-  m_LocalPosition: {x: 2.92, y: -3.85, z: -8.13}
+  m_LocalRotation: {x: -0.15970236, y: -0.19624414, z: 0.6106595, w: 0.7503856}
+  m_LocalPosition: {x: -0.69, y: -2.88, z: 0}
   m_LocalScale: {x: -1.4, y: 1.4, z: 1.4}
   m_ConstrainProportionsScale: 1
-  m_Children: []
+  m_Children:
+  - {fileID: 3200195619420559843}
   m_Father: {fileID: 2012195511606992797}
-  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+  m_LocalEulerAnglesHint: {x: 0, y: -29.312, z: 78.277}
 --- !u!212 &8801059365133154682
 SpriteRenderer:
   m_ObjectHideFlags: 0
@@ -679,6 +680,37 @@ SpriteRenderer:
   m_WasSpriteAssigned: 1
   m_MaskInteraction: 0
   m_SpriteSortPoint: 0
+--- !u!1 &6407075647612367868
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 3200195619420559843}
+  m_Layer: 0
+  m_Name: SpawnPosition
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &3200195619420559843
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 6407075647612367868}
+  serializedVersion: 2
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 1.37, y: 0.9, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children: []
+  m_Father: {fileID: 4924624723637109655}
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &6722466966674903542
 GameObject:
   m_ObjectHideFlags: 0
@@ -806,6 +838,7 @@ MonoBehaviour:
   _attackBuff: {fileID: 0}
   _animator: {fileID: 6966960270107114973}
   _bullet: {fileID: 2993084083037857778, guid: c019ed7bec191c44ab1331efe05e502a, type: 3}
+  _spawnPosition: {fileID: 3200195619420559843}
 --- !u!114 &1471911463985494154
 MonoBehaviour:
   m_ObjectHideFlags: 0

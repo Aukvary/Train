@@ -22,15 +22,19 @@ public class UnitStats : MonoBehaviour
         {
             _team = value;
 
+            if (_movementController == null)
+                return;
             if (value == Teams.Red && transform.localScale.x > 0)
             {
                 Vector3 bas = transform.localScale;
                 bas[0] *= -1;
+                transform.localScale = bas;
             }
             else if(value == Teams.Red && transform.localScale.x < 0)
             {
                 Vector3 bas = transform.localScale;
                 bas[0] *= -1;
+                transform.localScale = bas;
             }
         }
     }
@@ -89,19 +93,23 @@ public class UnitStats : MonoBehaviour
         _health = GetComponent<Health>();
 
         _buffes = new Dictionary<Type, Buff>();
-        Team = Team;
-    }
 
-    private void Start()
-    {
         InitBaseStats();
+        Team = Team;
     }
 
     private void InitBaseStats()
     {
-        float damage = _attackController.Damage;
-        float range = _attackController.Range;
-        float delay = _attackController.Delay;
+        float damage = 0;
+        float range = 0;
+        float delay = 0;
+
+        if(_attackController)
+            damage = _attackController.Damage;
+        if(_attackController)
+            range = _attackController.Range;
+        if(_attackController)
+            delay = _attackController.Delay;
 
         if (_movementController != null)
         {
@@ -146,5 +154,14 @@ public class UnitStats : MonoBehaviour
         {
             buff.Value.ResetBuff();
         }
+    }
+
+    internal void UnbuffAllUnit()
+    {
+        if (_buffes.Count == 0)
+            return;
+
+        _buffes.Clear();
+        ResetBuffes();
     }
 }

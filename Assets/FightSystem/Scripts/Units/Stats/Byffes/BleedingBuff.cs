@@ -31,6 +31,7 @@ public class BleedingBuff : TimeBuff
             float damage = unit.CurrentDamage * _multiplier;
             health.Damage(damage, unit);
         };
+        _multiplier = _damageMultiplier;
 
         return this;
     }
