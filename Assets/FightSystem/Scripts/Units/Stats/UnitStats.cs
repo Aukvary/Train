@@ -6,6 +6,7 @@ using UnityEngine;
 public class UnitStats : MonoBehaviour
 {
     [SerializeField] private Teams _team;
+    [SerializeField] private SpriteRenderer _teamBanner;
 
     private AttackController _attackController;
     private MovementController _movementController;
@@ -21,6 +22,8 @@ public class UnitStats : MonoBehaviour
         set
         {
             _team = value;
+            _teamBanner.color = _team == Teams.Red?
+                new Color(0.878f, 0.345f, 0.345f) : new Color(0.7f, 0.972f, 0.6f);
 
             if (_movementController == null)
                 return;
