@@ -5,12 +5,13 @@ using UnityEngine;
 public class RangeAttack : AttackController
 {
     [SerializeField] protected Bullet _bullet;
+    [SerializeField] protected Transform _spawnPosition;
 
     public Bullet Bullet => _bullet;
 
     protected override void Attack()
     {
-        Bullet.Shoot(transform.position, CalculateTime(Target.position), Target);
+        Bullet.Shoot(_spawnPosition.position, CalculateTime(Target.position), Target);
         StartCoroutine(Shoot(Target.position));
     }
 
