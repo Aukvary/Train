@@ -4,6 +4,9 @@ using UnityEngine;
 
 public class PlayerController : MonoBehaviour
 {
+    [SerializeField] Transform startPosition;
+    [SerializeField] LayerMask layerMask;
+
     public float maxDistance = 8;
     [SerializeField] Camera camera;
     [SerializeField] float speed;
@@ -11,10 +14,21 @@ public class PlayerController : MonoBehaviour
     private float _distance;
     private Vector3 _newTransform;
     private MinusFoodAndFuel _minusFoodAndFuel;
+    private InventorySystem _inventorySystem;
+
+    private void Awake()
+    {
+        _newTransform = new Vector3(startPosition.position.x, transform.position.y, startPosition.position.z);
+        _minusFoodAndFuel = GetComponent<MinusFoodAndFuel>();
+        _inventorySystem = GetComponent<InventorySystem>();
+    }
 
     private void Start()
     {
-        _minusFoodAndFuel = GetComponent<MinusFoodAndFuel>();
+        if (DataManager.Items != null)
+        {
+            _inventorySystem.item = DataManager.Items;
+        }
     }
 
     private void Update()
@@ -30,7 +44,7 @@ public class PlayerController : MonoBehaviour
         var direction = camera.ScreenPointToRay(Input.mousePosition);
 
         RaycastHit hit;
-        if (Physics.Raycast(direction, out hit))
+        if (Physics.Raycast(direction, out hit, layerMask))
         {
             var cell = hit.collider.gameObject;
 

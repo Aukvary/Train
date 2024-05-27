@@ -1178,13 +1178,13 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1635388217}
   serializedVersion: 2
-  m_LocalRotation: {x: -0, y: -0.56917536, z: -0, w: 0.8222162}
-  m_LocalPosition: {x: -4.79, y: 0.728, z: -1.331}
-  m_LocalScale: {x: 0.50000006, y: 0.5, z: 0.50000006}
+  m_LocalRotation: {x: -0.047625393, y: -0.670186, z: -0.20812033, w: 0.7108225}
+  m_LocalPosition: {x: -4.719, y: 1.097, z: -0.999}
+  m_LocalScale: {x: 0.70000005, y: 0.70000005, z: 0.70000005}
   m_ConstrainProportionsScale: 1
   m_Children: []
   m_Father: {fileID: 0}
-  m_LocalEulerAnglesHint: {x: 0, y: -69.385, z: 0}
+  m_LocalEulerAnglesHint: {x: -20.283, y: -84.054, z: -14.322}
 --- !u!114 &1635388219
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -1239,7 +1239,7 @@ SpriteRenderer:
   m_SortingLayerID: 0
   m_SortingLayer: 0
   m_SortingOrder: 0
-  m_Sprite: {fileID: 21300000, guid: ec7e545db6e439c448177193e1437431, type: 3}
+  m_Sprite: {fileID: 21300000, guid: 93282f9b25c4a15438bac7ec2a634be0, type: 3}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
   m_FlipX: 0
   m_FlipY: 0
@@ -1305,9 +1305,9 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1797682322}
   serializedVersion: 2
-  m_LocalRotation: {x: -0, y: 0.8191521, z: -0, w: -0.5735764}
-  m_LocalPosition: {x: 4.929, y: 0.728, z: -1.331}
-  m_LocalScale: {x: 0.50000006, y: 0.5, z: 0.50000006}
+  m_LocalRotation: {x: -0.24121842, y: 0.6646907, z: -0.013007097, w: -0.7069872}
+  m_LocalPosition: {x: 4.929, y: 0.959, z: -1.296}
+  m_LocalScale: {x: 0.7, y: 0.7, z: 0.7}
   m_ConstrainProportionsScale: 1
   m_Children:
   - {fileID: 1852188643}
@@ -1315,7 +1315,7 @@ Transform:
   - {fileID: 811978574}
   - {fileID: 555591516}
   m_Father: {fileID: 0}
-  m_LocalEulerAnglesHint: {x: 0, y: 250, z: 0}
+  m_LocalEulerAnglesHint: {x: 21, y: -90, z: 341.108}
 --- !u!114 &1797682324
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -1370,7 +1370,7 @@ SpriteRenderer:
   m_SortingLayerID: 0
   m_SortingLayer: 0
   m_SortingOrder: 0
-  m_Sprite: {fileID: 21300000, guid: ec7e545db6e439c448177193e1437431, type: 3}
+  m_Sprite: {fileID: 21300000, guid: 93282f9b25c4a15438bac7ec2a634be0, type: 3}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
   m_FlipX: 0
   m_FlipY: 0
@@ -1636,6 +1636,10 @@ PrefabInstance:
       propertyPath: _spawZone
       value: 
       objectReference: {fileID: 509017655}
+    - target: {fileID: 6293331474322012495, guid: a1bf10280d5eac641a1f4640912e6cba, type: 3}
+      propertyPath: _mannaRegen
+      value: 1.2
+      objectReference: {fileID: 0}
     - target: {fileID: 6293331474322012495, guid: a1bf10280d5eac641a1f4640912e6cba, type: 3}
       propertyPath: _targets.Array.data[0]
       value: 

@@ -6,7 +6,7 @@ public class ResourseCollision : MonoBehaviour
 {
     public enum resourse
     {
-        fuel, food, wood, stone, iron
+        fuel, food, wood, stone, iron, enemy
     }
 
     [SerializeField] resourse resourses;
@@ -24,7 +24,7 @@ public class ResourseCollision : MonoBehaviour
 
     private void OnCollisionEnter(Collision collision)
     {
-            Debug.Log("sigma");
+        Debug.Log("sigma");
         var col = collision.gameObject.GetComponent<PlayerController>();
         if (col != null)
         {
@@ -56,7 +56,12 @@ public class ResourseCollision : MonoBehaviour
                 
                 _inventorySystem.item[3].quantity += Mathf.FloorToInt(quant);
             }
-            
+            if (resourses == resourse.enemy)
+            {
+
+                DataManager.GoToFightScene(_inventorySystem);
+            }
+
             Destroy(gameObject);
         }
     }
