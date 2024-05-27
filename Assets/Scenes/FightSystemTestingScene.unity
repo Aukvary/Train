@@ -1637,6 +1637,10 @@ PrefabInstance:
       value: 
       objectReference: {fileID: 509017655}
     - target: {fileID: 6293331474322012495, guid: a1bf10280d5eac641a1f4640912e6cba, type: 3}
+      propertyPath: _mannaRegen
+      value: 1.2
+      objectReference: {fileID: 0}
+    - target: {fileID: 6293331474322012495, guid: a1bf10280d5eac641a1f4640912e6cba, type: 3}
       propertyPath: _targets.Array.data[0]
       value: 
       objectReference: {fileID: 1797682323}
