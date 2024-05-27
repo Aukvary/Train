@@ -13,6 +13,10 @@ public class InventorySystem : MonoBehaviour
     {
         for(int i = 0; i < item.Count; i++)
         {
+            if (item[i].quantity > maxQuslityItem)
+            {
+                item[i].quantity = maxQuslityItem;
+            }
             item[i].textQuantity.text = item[i].quantity.ToString();
         }
     }
