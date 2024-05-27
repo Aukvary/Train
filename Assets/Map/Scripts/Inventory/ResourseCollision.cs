@@ -14,10 +14,12 @@ public class ResourseCollision : MonoBehaviour
     [SerializeField] int quantityRandom;
 
     private InventorySystem _inventorySystem;
+    private PlayerController _playerController;
 
 
     private void Start()
     {
+        _playerController = FindObjectOfType<PlayerController>();
         _inventorySystem = FindObjectOfType<InventorySystem>();
     }
     
@@ -60,6 +62,9 @@ public class ResourseCollision : MonoBehaviour
             {
 
                 DataManager.GoToFightScene(_inventorySystem);
+                PlayerPrefs.SetFloat("lastPositionX", _playerController.transform.position.x);
+                PlayerPrefs.SetFloat("lastPositionY", _playerController.transform.position.y);
+                PlayerPrefs.SetFloat("lastPositionZ", _playerController.transform.position.z);
             }
 
             Destroy(gameObject);

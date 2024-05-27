@@ -18,7 +18,6 @@ public class PlayerController : MonoBehaviour
 
     private void Awake()
     {
-        _newTransform = new Vector3(startPosition.position.x, transform.position.y, startPosition.position.z);
         _minusFoodAndFuel = GetComponent<MinusFoodAndFuel>();
         _inventorySystem = GetComponent<InventorySystem>();
     }
@@ -28,6 +27,7 @@ public class PlayerController : MonoBehaviour
         if (DataManager.Items != null)
         {
             _inventorySystem.item = DataManager.Items;
+            _newTransform = new Vector3(PlayerPrefs.GetFloat("lastPositionX"), PlayerPrefs.GetFloat("lastPositionY"), PlayerPrefs.GetFloat("lastPositionZ"));
         }
     }
 
