@@ -17,5 +17,5 @@ public abstract class Health : MonoBehaviour
     protected void InvokeDieEvent() =>
         OnDieEvent?.Invoke();
 
-    protected abstract void Die();
+    public abstract void Die();
 }

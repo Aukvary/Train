@@ -25,9 +25,10 @@ public class PlayerHealth : Health
         }
     }
 
-    protected override void Die()
+    public override void Die()
     {
         GetComponent<UnitStats>().UnbuffAllUnit();
         Destroy(gameObject);
+        InvokeDieEvent();
     }
 }

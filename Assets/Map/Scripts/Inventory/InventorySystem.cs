@@ -9,6 +9,16 @@ public class InventorySystem : MonoBehaviour
 
     public List<Item> item;
 
+    private void Start()
+    {
+        if(DataManager.Items != null)
+        {
+            print(DataManager.Items.Count);
+            item = DataManager.Items;
+            transform.position = DataManager.LastPosition;
+        }
+    }
+
     private void Update()
     {
         for(int i = 0; i < item.Count; i++)

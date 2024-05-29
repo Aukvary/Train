@@ -1,5 +1,6 @@
 using System.Collections;
 using System.Collections.Generic;
+using UnityEditorInternal;
 using UnityEngine;
 
 public class PlayerController : MonoBehaviour
@@ -24,11 +25,7 @@ public class PlayerController : MonoBehaviour
 
     private void Start()
     {
-        if (DataManager.Items != null)
-        {
-            _inventorySystem.item = DataManager.Items;
-            _newTransform = new Vector3(PlayerPrefs.GetFloat("lastPositionX"), PlayerPrefs.GetFloat("lastPositionY"), PlayerPrefs.GetFloat("lastPositionZ"));
-        }
+        _newTransform = DataManager.LastPosition;
     }
 
     private void Update()
@@ -58,7 +55,6 @@ public class PlayerController : MonoBehaviour
 
                 _newTransform = cell.transform.position;
                 transform.LookAt(_newTransform);
-                Debug.Log("pon");
             }
         }
     }
