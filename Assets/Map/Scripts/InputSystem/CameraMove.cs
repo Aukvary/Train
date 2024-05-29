@@ -3,6 +3,10 @@ using UnityEngine.InputSystem;
 
 public class CameraMovement : MonoBehaviour
 {
+    [SerializeField] Transform train;
+    [SerializeField] Transform q;
+    [SerializeField] Transform w;
+
     private CameraController cameraActions;
     private InputAction movement;
     private Transform cameraTransform;
@@ -59,8 +63,14 @@ public class CameraMovement : MonoBehaviour
 
     private void Awake()
     {
+        //transform.position = new Vector3(train.transform.position.x, 0, train.transform.position.z);
         cameraActions = new CameraController();
         cameraTransform = this.GetComponentInChildren<Camera>().transform;
+    }
+
+    private void Start()
+    {
+        transform.position = new Vector3(train.transform.position.x, 0, train.transform.position.z);
     }
 
     private void OnEnable()

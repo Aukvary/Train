@@ -40,10 +40,13 @@ public class ResourseCollision : MonoBehaviour
         var col = collision.gameObject.GetComponent<PlayerController>();
         if (col != null)
         {
+            Destroy(gameObject);
+            
             float saveLevel = PlayerPrefs.GetFloat("resourseDrop") / 100 + 1;
             float quant = Random.Range(quantity * saveLevel - quantityRandom, quantity * saveLevel + quantityRandom);
             Debug.Log("quant=" + quant);
 
+            
             if (resourses == resourse.fuel)
             {
 
@@ -74,7 +77,6 @@ public class ResourseCollision : MonoBehaviour
                 DataManager.GoToFightScene(_inventorySystem, transform.position.x.ToString());
             }
 
-            Destroy(gameObject);
         }
     }
 }
