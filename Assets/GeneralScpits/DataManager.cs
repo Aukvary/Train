@@ -15,9 +15,13 @@ public static class DataManager
 
     public static void GoToFightScene(InventorySystem invenory, string train)
     {
-        _items = invenory.item;
         _lastPosition = invenory.transform.position;
         _currentEnemy = train;
+
+        foreach (var item in invenory.item)
+        {
+            PlayerPrefs.SetInt(item.name, item.quantity);
+        }
 
         SceneManager.LoadScene((int)Scenes.FightScene);
     }

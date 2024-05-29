@@ -8,5 +8,4 @@ using TMPro;
     public int quantity;
     public string description;
     public TextMeshProUGUI textQuantity;
-
 }

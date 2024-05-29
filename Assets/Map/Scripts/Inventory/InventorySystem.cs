@@ -1,7 +1,5 @@
-using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
-using TMPro;
 
 public class InventorySystem : MonoBehaviour
 {
@@ -11,17 +9,15 @@ public class InventorySystem : MonoBehaviour
 
     private void Start()
     {
-        if(DataManager.Items != null)
+        foreach (var item in item)
         {
-            print(DataManager.Items.Count);
-            item = DataManager.Items;
-            transform.position = DataManager.LastPosition;
+            item.quantity = PlayerPrefs.GetInt(item.name, item.quantity);
         }
     }
 
     private void Update()
     {
-        for(int i = 0; i < item.Count; i++)
+        for (int i = 0; i < item.Count; i++)
         {
             if (item[i].quantity > maxQuslityItem)
             {
