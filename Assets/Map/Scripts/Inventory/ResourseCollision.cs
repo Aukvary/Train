@@ -4,7 +4,7 @@ public class ResourseCollision : MonoBehaviour
 {
     public enum resourse
     {
-        fuel, food, wood, stone, iron, enemy
+        fuel, food, wood, stone, iron, enemy, enemyBoss
     }
 
     [SerializeField] resourse resourses;
@@ -75,6 +75,10 @@ public class ResourseCollision : MonoBehaviour
             if (resourses == resourse.enemy)
             {
                 DataManager.GoToFightScene(_inventorySystem, transform.position.x.ToString());
+            }
+            if (resourses == resourse.enemyBoss)
+            {
+                DataManager.GoToBossScene(_inventorySystem, transform.position.x.ToString());
             }
 
         }
