@@ -52,6 +52,9 @@ public class PlayerController : MonoBehaviour
 
                 _newTransform = cell.transform.position;
                 transform.LookAt(_newTransform);
+
+                GetComponent<AudioSource>().Play();
+
             }
         }
     }
