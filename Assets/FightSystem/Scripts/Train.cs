@@ -11,7 +11,7 @@ public class Train : MonoBehaviour
 
     private void Update()
     {
-        if (Input.GetKeyDown(KeyCode.Space) && !_playerTrain)
+        if (Input.GetKeyDown(KeyCode.P) && !_playerTrain)
             GetComponent<Health>().Die();
     }
 }

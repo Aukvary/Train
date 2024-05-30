@@ -38,7 +38,7 @@ RenderSettings:
   m_ReflectionIntensity: 1
   m_CustomReflection: {fileID: 0}
   m_Sun: {fileID: 0}
-  m_IndirectSpecularColor: {r: 0, g: 0, b: 0, a: 1}
+  m_IndirectSpecularColor: {r: 0.013846477, g: 0.013282097, b: 0.012603769, a: 1}
   m_UseRadianceAmbientProbe: 0
 --- !u!157 &3
 LightmapSettings:
@@ -4676,10 +4676,10 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_text: Back to main menu
+  m_text: "\u0432\u0435\u0440\u043D\u0443\u0442\u044C\u0441\u044F \u0432 \u043C\u0435\u043D\u044E"
   m_isRightToLeft: 0
-  m_fontAsset: {fileID: 11400000, guid: 8f586378b4e144a9851e7b34d9b748ee, type: 2}
-  m_sharedMaterial: {fileID: 2180264, guid: 8f586378b4e144a9851e7b34d9b748ee, type: 2}
+  m_fontAsset: {fileID: 11400000, guid: c58b66b91334bea49b27bc8623011b92, type: 2}
+  m_sharedMaterial: {fileID: 4410582916263354714, guid: c58b66b91334bea49b27bc8623011b92, type: 2}
   m_fontSharedMaterials: []
   m_fontMaterial: {fileID: 0}
   m_fontMaterials: []
@@ -5950,10 +5950,10 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_text: Continue
+  m_text: "\u043F\u0440\u043E\u0434\u043E\u0436\u0438\u0442\u044C"
   m_isRightToLeft: 0
-  m_fontAsset: {fileID: 11400000, guid: 8f586378b4e144a9851e7b34d9b748ee, type: 2}
-  m_sharedMaterial: {fileID: 2180264, guid: 8f586378b4e144a9851e7b34d9b748ee, type: 2}
+  m_fontAsset: {fileID: 11400000, guid: c58b66b91334bea49b27bc8623011b92, type: 2}
+  m_sharedMaterial: {fileID: 4410582916263354714, guid: c58b66b91334bea49b27bc8623011b92, type: 2}
   m_fontSharedMaterials: []
   m_fontMaterial: {fileID: 0}
   m_fontMaterials: []
@@ -19153,6 +19153,7 @@ GameObject:
   - component: {fileID: 563220816}
   - component: {fileID: 563220815}
   - component: {fileID: 563220817}
+  - component: {fileID: 563220818}
   m_Layer: 0
   m_Name: Camera
   m_TagString: Untagged
@@ -19212,7 +19213,7 @@ AudioSource:
   m_Enabled: 1
   serializedVersion: 4
   OutputAudioMixerGroup: {fileID: 0}
-  m_audioClip: {fileID: 8300000, guid: 2a5f2473f28891e4fb6de65ce6fd5ce6, type: 3}
+  m_audioClip: {fileID: 8300000, guid: f0565744da69ccd4889b166645d900b4, type: 3}
   m_PlayOnAwake: 1
   m_Volume: 0.1
   m_Pitch: 1
@@ -19298,6 +19299,18 @@ AudioSource:
     m_PreInfinity: 2
     m_PostInfinity: 2
     m_RotationOrder: 4
+--- !u!114 &563220818
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 563220814}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 69ee8354872d30f4ba7a80c5482e07ea, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!1001 &563380258
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -48090,8 +48103,8 @@ Transform:
   m_GameObject: {fileID: 1566232106}
   serializedVersion: 2
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: -46.1, y: -0.25, z: 31.700005}
-  m_LocalScale: {x: 26.4, y: 2.6923337, z: 18.187605}
+  m_LocalPosition: {x: -8.6839, y: -0.25, z: 31.0272}
+  m_LocalScale: {x: 38.36917, y: 2.6923337, z: 23.157534}
   m_ConstrainProportionsScale: 1
   m_Children: []
   m_Father: {fileID: 0}
@@ -54361,7 +54374,7 @@ Camera:
     height: 1
   near clip plane: 0.3
   far clip plane: 1000
-  field of view: 60
+  field of view: 83.1
   orthographic: 0
   orthographic size: 5
   m_Depth: 0

@@ -440,7 +440,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 7748115342666094150, guid: df69a31f699074e499adf1a51da0e869, type: 3}
       propertyPath: Health
-      value: 50
+      value: 20
       objectReference: {fileID: 0}
     - target: {fileID: 8807051739593812640, guid: df69a31f699074e499adf1a51da0e869, type: 3}
       propertyPath: _damage
@@ -576,7 +576,7 @@ AudioSource:
   m_PlayOnAwake: 1
   m_Volume: 0.1
   m_Pitch: 1
-  Loop: 0
+  Loop: 1
   Mute: 0
   Spatialize: 0
   SpatializePostEffects: 0
@@ -892,7 +892,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 5382a48c0a22e104c87bd157f6d024c3, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  Health: 50
+  Health: 20
 --- !u!1001 &1253910095
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -1032,7 +1032,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 5382a48c0a22e104c87bd157f6d024c3, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  Health: 50
+  Health: 20
 --- !u!1001 &1421953882
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -1139,7 +1139,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 7748115342666094150, guid: df69a31f699074e499adf1a51da0e869, type: 3}
       propertyPath: Health
-      value: 50
+      value: 20
       objectReference: {fileID: 0}
     - target: {fileID: 8807051739593812640, guid: df69a31f699074e499adf1a51da0e869, type: 3}
       propertyPath: _damage
@@ -1207,7 +1207,7 @@ MeshRenderer:
   m_RenderingLayerMask: 1
   m_RendererPriority: 0
   m_Materials:
-  - {fileID: 2100000, guid: caa8dd1704cbefa4f90d3da03a7e3304, type: 2}
+  - {fileID: 2100000, guid: 3a1513b61de78604da17ba814b7ffbdf, type: 2}
   m_StaticBatchInfo:
     firstSubMesh: 0
     subMeshCount: 0
@@ -1418,7 +1418,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 5382a48c0a22e104c87bd157f6d024c3, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  Health: 70
+  Health: 40
 --- !u!1 &1797682322
 GameObject:
   m_ObjectHideFlags: 0
@@ -1471,7 +1471,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 6a1d91394035dfa4ab9163e3b909429a, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  Health: 70
+  Health: 40
 --- !u!212 &1797682325
 SpriteRenderer:
   m_ObjectHideFlags: 0
