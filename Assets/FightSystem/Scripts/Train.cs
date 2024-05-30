@@ -6,7 +6,7 @@ public class Train : MonoBehaviour
     [SerializeField] private bool isBoss;
     private void Awake()
     {
-        GetComponent<Health>().OnDieEvent +=()=> DataManager.GotoMapScene(_playerTrain, isBoss);
+        GetComponent<Health>().OnDieEvent +=()=> DataManager.GotoMapScene(!_playerTrain, isBoss);
     }
 
     private void Update()
