@@ -3,18 +3,21 @@ using UnityEngine.SceneManagement;
 
 public class Stop : MonoBehaviour
 {
-    public string sceneToLoad;
+    [SerializeField] private GameObject _pauseMenu;
+    [SerializeField] private InventorySystem _inventorySystem;
 
     void Update()
     {
         if (Input.GetKeyDown(KeyCode.Escape))
-        {
-            LoadScene();
-        }
+            _pauseMenu.SetActive(!_pauseMenu.activeSelf);
     }
 
-    public void LoadScene()
+    public void Continue()=>
+        _pauseMenu.SetActive(!_pauseMenu.activeSelf);
+
+    public void Exit()
     {
-        SceneManager.LoadScene("Game Menu");
+        DataManager.SaveData(_inventorySystem, null);
+        SceneManager.LoadScene((int)Scenes.MainMenu);
     }
 }

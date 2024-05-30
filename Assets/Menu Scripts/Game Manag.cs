@@ -1,17 +1,23 @@
 using UnityEngine;
 using UnityEngine.SceneManagement;
 
-public class GameManag : MonoBehaviour
+public class GameManager : MonoBehaviour
 {
     public void Quit()
     {
-        PlayerPrefs.SetFloat(nameof(TowerHealth), 0);
+        PlayerPrefs.DeleteAll();
+        DataManager.DeleteData();
         Application.Quit();
     }
 
     public void StartGame()
     {
         SceneManager.LoadScene("MapScene");
+    }
+
+    public void Tutorial()
+    {
+        SceneManager.LoadScene((int)Scenes.Tutorial);
     }
 
     public void Options()
