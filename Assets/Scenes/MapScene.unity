@@ -7799,8 +7799,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 764f09c19386059438b12cfbbc1eab4f, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  woodQuantity: 21
-  ironQuantity: 18
+  woodQuantity: 16
+  ironQuantity: 9
   level: 5
 --- !u!1001 &247591250
 PrefabInstance:
@@ -8360,7 +8360,7 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_text: 26
+  m_text: 13
   m_isRightToLeft: 0
   m_fontAsset: {fileID: 11400000, guid: 8f586378b4e144a9851e7b34d9b748ee, type: 2}
   m_sharedMaterial: {fileID: 2180264, guid: 8f586378b4e144a9851e7b34d9b748ee, type: 2}
@@ -10365,8 +10365,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 764f09c19386059438b12cfbbc1eab4f, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  woodQuantity: 36
-  ironQuantity: 15
+  woodQuantity: 19
+  ironQuantity: 9
   level: 1
 --- !u!4 &323650154 stripped
 Transform:
@@ -13969,7 +13969,7 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_text: 36
+  m_text: 18
   m_isRightToLeft: 0
   m_fontAsset: {fileID: 11400000, guid: 8f586378b4e144a9851e7b34d9b748ee, type: 2}
   m_sharedMaterial: {fileID: 2180264, guid: 8f586378b4e144a9851e7b34d9b748ee, type: 2}
@@ -16090,7 +16090,7 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_text: 6
+  m_text: 5
   m_isRightToLeft: 0
   m_fontAsset: {fileID: 11400000, guid: 8f586378b4e144a9851e7b34d9b748ee, type: 2}
   m_sharedMaterial: {fileID: 2180264, guid: 8f586378b4e144a9851e7b34d9b748ee, type: 2}
@@ -18387,7 +18387,7 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_text: 36
+  m_text: 19
   m_isRightToLeft: 0
   m_fontAsset: {fileID: 11400000, guid: 8f586378b4e144a9851e7b34d9b748ee, type: 2}
   m_sharedMaterial: {fileID: 2180264, guid: 8f586378b4e144a9851e7b34d9b748ee, type: 2}
@@ -21572,8 +21572,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 764f09c19386059438b12cfbbc1eab4f, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  woodQuantity: 36
-  ironQuantity: 9
+  woodQuantity: 18
+  ironQuantity: 5
   level: 6
 --- !u!1001 &648275790
 PrefabInstance:
@@ -22496,7 +22496,7 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_text: 38
+  m_text: 20
   m_isRightToLeft: 0
   m_fontAsset: {fileID: 11400000, guid: 8f586378b4e144a9851e7b34d9b748ee, type: 2}
   m_sharedMaterial: {fileID: 2180264, guid: 8f586378b4e144a9851e7b34d9b748ee, type: 2}
@@ -24139,7 +24139,7 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_text: 15
+  m_text: 9
   m_isRightToLeft: 0
   m_fontAsset: {fileID: 11400000, guid: 8f586378b4e144a9851e7b34d9b748ee, type: 2}
   m_sharedMaterial: {fileID: 2180264, guid: 8f586378b4e144a9851e7b34d9b748ee, type: 2}
@@ -28186,7 +28186,7 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_text: 21
+  m_text: 16
   m_isRightToLeft: 0
   m_fontAsset: {fileID: 11400000, guid: 8f586378b4e144a9851e7b34d9b748ee, type: 2}
   m_sharedMaterial: {fileID: 2180264, guid: 8f586378b4e144a9851e7b34d9b748ee, type: 2}
@@ -30449,7 +30449,7 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_text: 18
+  m_text: 9
   m_isRightToLeft: 0
   m_fontAsset: {fileID: 11400000, guid: 8f586378b4e144a9851e7b34d9b748ee, type: 2}
   m_sharedMaterial: {fileID: 2180264, guid: 8f586378b4e144a9851e7b34d9b748ee, type: 2}
@@ -32965,7 +32965,7 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_text: 24
+  m_text: 12
   m_isRightToLeft: 0
   m_fontAsset: {fileID: 11400000, guid: 8f586378b4e144a9851e7b34d9b748ee, type: 2}
   m_sharedMaterial: {fileID: 2180264, guid: 8f586378b4e144a9851e7b34d9b748ee, type: 2}
@@ -33970,7 +33970,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 764f09c19386059438b12cfbbc1eab4f, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  woodQuantity: 38
+  woodQuantity: 20
   ironQuantity: 0
   level: 0
 --- !u!4 &1094232579 stripped
@@ -42213,8 +42213,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 764f09c19386059438b12cfbbc1eab4f, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  woodQuantity: 28
-  ironQuantity: 24
+  woodQuantity: 16
+  ironQuantity: 12
   level: 7
 --- !u!4 &1362740354 stripped
 Transform:
@@ -43333,7 +43333,7 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_text: 18
+  m_text: 12
   m_isRightToLeft: 0
   m_fontAsset: {fileID: 11400000, guid: 8f586378b4e144a9851e7b34d9b748ee, type: 2}
   m_sharedMaterial: {fileID: 2180264, guid: 8f586378b4e144a9851e7b34d9b748ee, type: 2}
@@ -43752,7 +43752,7 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_text: 18
+  m_text: 9
   m_isRightToLeft: 0
   m_fontAsset: {fileID: 11400000, guid: 8f586378b4e144a9851e7b34d9b748ee, type: 2}
   m_sharedMaterial: {fileID: 2180264, guid: 8f586378b4e144a9851e7b34d9b748ee, type: 2}
@@ -45190,8 +45190,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 764f09c19386059438b12cfbbc1eab4f, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  woodQuantity: 35
-  ironQuantity: 6
+  woodQuantity: 22
+  ironQuantity: 5
   level: 4
 --- !u!1 &1459798022 stripped
 GameObject:
@@ -45825,7 +45825,7 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_text: 35
+  m_text: 22
   m_isRightToLeft: 0
   m_fontAsset: {fileID: 11400000, guid: 8f586378b4e144a9851e7b34d9b748ee, type: 2}
   m_sharedMaterial: {fileID: 2180264, guid: 8f586378b4e144a9851e7b34d9b748ee, type: 2}
@@ -46058,8 +46058,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 764f09c19386059438b12cfbbc1eab4f, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  woodQuantity: 42
-  ironQuantity: 18
+  woodQuantity: 21
+  ironQuantity: 9
   level: 3
 --- !u!1001 &1497500458
 PrefabInstance:
@@ -47606,7 +47606,7 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_text: 42
+  m_text: 21
   m_isRightToLeft: 0
   m_fontAsset: {fileID: 11400000, guid: 8f586378b4e144a9851e7b34d9b748ee, type: 2}
   m_sharedMaterial: {fileID: 2180264, guid: 8f586378b4e144a9851e7b34d9b748ee, type: 2}
@@ -49627,8 +49627,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 764f09c19386059438b12cfbbc1eab4f, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  woodQuantity: 18
-  ironQuantity: 26
+  woodQuantity: 12
+  ironQuantity: 13
   level: 2
 --- !u!1001 &1620136704
 PrefabInstance:
@@ -50721,7 +50721,7 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_text: 9
+  m_text: 5
   m_isRightToLeft: 0
   m_fontAsset: {fileID: 11400000, guid: 8f586378b4e144a9851e7b34d9b748ee, type: 2}
   m_sharedMaterial: {fileID: 2180264, guid: 8f586378b4e144a9851e7b34d9b748ee, type: 2}
@@ -51491,7 +51491,7 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_text: 28
+  m_text: 16
   m_isRightToLeft: 0
   m_fontAsset: {fileID: 11400000, guid: 8f586378b4e144a9851e7b34d9b748ee, type: 2}
   m_sharedMaterial: {fileID: 2180264, guid: 8f586378b4e144a9851e7b34d9b748ee, type: 2}
