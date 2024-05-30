@@ -101,8 +101,8 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   resourses: 4
-  quantity: 3
-  quantityRandom: 2
+  quantity: 2
+  quantityRandom: 1
 --- !u!65 &6430797067550593589
 BoxCollider:
   m_ObjectHideFlags: 0

@@ -4,6 +4,8 @@ using UnityEngine;
 
 public class ResoursesMinus : MonoBehaviour
 {
+    public bool isResourseHave = false;
+
     [SerializeField] int woodQuantity;
     [SerializeField] int ironQuantity;
 
@@ -15,7 +17,12 @@ public class ResoursesMinus : MonoBehaviour
     }
     public void Click()
     {
-        //if(_inventorySystem.item[1].quantity>=woodQuantity)
+        if (_inventorySystem.item[1].quantity >= woodQuantity && _inventorySystem.item[3].quantity >= ironQuantity)
+        {
+            isResourseHave = true;
+            _inventorySystem.item[1].quantity -= woodQuantity;
+            _inventorySystem.item[3].quantity -= ironQuantity;
+        }
     }
 
 }

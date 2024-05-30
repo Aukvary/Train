@@ -15,6 +15,5 @@ public class openButtonDescryption : MonoBehaviour
             closeMenu[i].SetActive(false);
         }
         openMenu.SetActive(true);
-        Debug.Log("rabotaet");
     }
 }
