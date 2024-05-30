@@ -4,5 +4,8 @@ enum Scenes
     MapScene,
     FightScene,
     Options,
-    GameMenu
+    GameMenu,
+    BossScene,
+    Final,
+    Tutorial
 }

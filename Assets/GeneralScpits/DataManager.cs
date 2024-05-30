@@ -13,6 +13,18 @@ public static class DataManager
 
     public static void GoToFightScene(InventorySystem invenory, string train)
     {
+        SaveData(invenory, train);
+        SceneManager.LoadScene((int)Scenes.FightScene);
+    }
+
+    public static void GoToBossScene(InventorySystem invenory, string train)
+    {
+        SaveData(invenory, train);
+        SceneManager.LoadScene((int)Scenes.BossScene);
+    }
+
+    public static void SaveData(InventorySystem invenory, string train)
+    {
         _lastPosition = invenory.transform.position;
         _currentEnemy = train;
 
@@ -20,11 +32,9 @@ public static class DataManager
         {
             PlayerPrefs.SetInt(item.name, item.quantity);
         }
-
-        SceneManager.LoadScene((int)Scenes.FightScene);
     }
 
-    public static void GotoMapScene(bool win)
+    public static void GotoMapScene(bool win, bool isBoss = false)
     {
         if (win)
         {
@@ -36,7 +46,10 @@ public static class DataManager
             _lastPosition = Vector3.zero;
         }
         _currentEnemy = null;
-        SceneManager.LoadScene((int)Scenes.MapScene);
+        if (isBoss)
+            SceneManager.LoadScene((int)Scenes.Final);
+        else
+            SceneManager.LoadScene((int)Scenes.MapScene);
     }
 
     public static void DeleteData()

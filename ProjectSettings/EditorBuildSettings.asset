@@ -20,4 +20,13 @@ EditorBuildSettings:
   - enabled: 1
     path: Assets/Scenes/Game Menu.unity
     guid: e6e5001f3cd74cc4aabc2ab3c2ff47ec
+  - enabled: 1
+    path: Assets/Scenes/BossScene.unity
+    guid: 0376e78d857b9584c94d4899506bfede
+  - enabled: 1
+    path: Assets/Scenes/FinalScene.unity
+    guid: 68b1f1126ed2dd64da54131386e5be7a
+  - enabled: 1
+    path: Assets/Scenes/TutorialScene.unity
+    guid: 9c7a6d4f5447f194a959a8b10c086b3d
   m_configObjects: {}

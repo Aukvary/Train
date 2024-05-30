@@ -1,16 +1,17 @@
 using UnityEngine;
-using UnityEngine.SceneManagement;
 
 public class Train : MonoBehaviour
 {
+    [SerializeField] private bool _playerTrain;
+    [SerializeField] private bool isBoss;
     private void Awake()
     {
-        GetComponent<Health>().OnDieEvent += () => DataManager.GotoMapScene(true);
+        GetComponent<Health>().OnDieEvent +=()=> DataManager.GotoMapScene(_playerTrain, isBoss);
     }
 
     private void Update()
     {
-        if (Input.GetKey(KeyCode.Space))
+        if (Input.GetKeyDown(KeyCode.Space) && !_playerTrain)
             GetComponent<Health>().Die();
     }
 }

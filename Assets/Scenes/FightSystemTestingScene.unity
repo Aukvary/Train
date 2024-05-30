@@ -1162,6 +1162,7 @@ GameObject:
   - component: {fileID: 1635388220}
   - component: {fileID: 1635388219}
   - component: {fileID: 1635388222}
+  - component: {fileID: 1635388223}
   m_Layer: 0
   m_Name: PlayerTrain
   m_TagString: Untagged
@@ -1263,6 +1264,20 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   _team: 0
   _teamBanner: {fileID: 1635388220}
+--- !u!114 &1635388223
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1635388217}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: d864abe1824d7e14b8b99618f51767b7, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  _playerTrain: 1
+  isBoss: 0
 --- !u!1 &1797682322
 GameObject:
   m_ObjectHideFlags: 0
@@ -1401,6 +1416,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: d864abe1824d7e14b8b99618f51767b7, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  _playerTrain: 0
+  isBoss: 0
 --- !u!114 &1797682328
 MonoBehaviour:
   m_ObjectHideFlags: 0

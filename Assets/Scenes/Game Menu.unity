@@ -38,7 +38,7 @@ RenderSettings:
   m_ReflectionIntensity: 1
   m_CustomReflection: {fileID: 0}
   m_Sun: {fileID: 0}
-  m_IndirectSpecularColor: {r: 0.0031093494, g: 0.0027564813, b: 0.003310872, a: 1}
+  m_IndirectSpecularColor: {r: 0.0031615254, g: 0.002758934, b: 0.003368426, a: 1}
   m_UseRadianceAmbientProbe: 0
 --- !u!157 &3
 LightmapSettings:
@@ -1427,7 +1427,7 @@ GameObject:
   - component: {fileID: 1408027914}
   - component: {fileID: 1408027913}
   m_Layer: 5
-  m_Name: Canvas
+  m_Name: PauseMenu
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -1512,6 +1512,7 @@ RectTransform:
   - {fileID: 733150513}
   - {fileID: 33637444}
   - {fileID: 594294378}
+  - {fileID: 1740722127}
   m_Father: {fileID: 0}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0, y: 0}
@@ -1556,12 +1557,12 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1740722125}
   serializedVersion: 2
-  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 455.4318, y: 254.23732, z: -3.5262554}
-  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
+  m_LocalPosition: {x: -219.92575, y: -99.97387, z: -6.1031346}
+  m_LocalScale: {x: 1.7307693, y: 1.7307693, z: 1.7307693}
   m_ConstrainProportionsScale: 0
   m_Children: []
-  m_Father: {fileID: 0}
+  m_Father: {fileID: 1408027916}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &1794926956
 GameObject:
@@ -2071,4 +2072,3 @@ SceneRoots:
   - {fileID: 577325505}
   - {fileID: 1794926959}
   - {fileID: 1408027916}
-  - {fileID: 1740722127}
