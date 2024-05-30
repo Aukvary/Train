@@ -1,6 +1,3 @@
-using System.Collections;
-using System.Collections.Generic;
-using UnityEditorInternal;
 using UnityEngine;
 
 public class PlayerController : MonoBehaviour
@@ -9,7 +6,7 @@ public class PlayerController : MonoBehaviour
     [SerializeField] LayerMask layerMask;
 
     public float maxDistance = 8;
-    [SerializeField] Camera camera;
+    [SerializeField] new Camera camera;
     [SerializeField] float speed;
 
     private float _distance;
