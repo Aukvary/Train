@@ -51,7 +51,7 @@ public class CardDeck
         
         CardRarityTitles cardType;
 
-        if (chance % 10 == 0)
+        if (chance % 14 == 0)
             cardType = CardRarityTitles.legendary;
         else if (chance % 7 == 0)
             cardType = CardRarityTitles.rarity;
