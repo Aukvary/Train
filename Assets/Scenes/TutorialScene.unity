@@ -2342,7 +2342,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 0
+  m_IsActive: 1
 --- !u!224 &628366211
 RectTransform:
   m_ObjectHideFlags: 0
@@ -3804,7 +3804,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 1
+  m_IsActive: 0
 --- !u!224 &1304006708
 RectTransform:
   m_ObjectHideFlags: 0
@@ -3968,7 +3968,7 @@ MonoBehaviour:
     \u0441\u043E\u0431\u0438\u0440\u0430\u0442\u044C \u0440\u0435\u0441\u0443\u0440\u0441\u044B.
     \u041E\u043D\u0438 \u043D\u0435\u043E\u0431\u0445\u043E\u0434\u0438\u043C\u044B
     \u0434\u043B\u044F \u043F\u0440\u043E\u043A\u0430\u0447\u043A\u0438 \u0438 \u043F\u0435\u0440\u0435\u043C\u0435\u0449\u0435\u043D\u0438\u044F.
-    \u0427\u0442\u043E\u0431\u044B \u0441\u043E\u0431\u0440\u0430\u0442\u044C \u0441\u0435\u0440\u0441\u0443\u0440
+    \u0427\u0442\u043E\u0431\u044B \u0441\u043E\u0431\u0440\u0430\u0442\u044C \u0440\u0435\u0441\u0443\u0440\u0441
     \u043F\u0440\u043E\u0441\u0442\u043E \u0432\u0441\u0442\u0430\u043D\u044C\u0442\u0435
     \u043D\u0430 \u043A\u043B\u0435\u0442\u043A\u0443 \u0440\u0435\u0441\u0443\u0440\u0441\u0430"
   m_isRightToLeft: 0
