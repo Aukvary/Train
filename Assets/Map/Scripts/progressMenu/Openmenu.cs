@@ -13,13 +13,13 @@ public class Openmenu : MonoBehaviour
 
     private void Update()
     {
-        if(Input.GetKeyDown(KeyCode.P) && progressMenu.activeSelf == false)
+        if(Input.GetKeyDown(KeyCode.Tab) && progressMenu.activeSelf == false)
         {
             progressMenu.SetActive(true);
             cameraMove.GetComponent<CameraMovement>().enabled = false;
             playerController.GetComponent<PlayerController>().enabled = false;
         }
-        else if(Input.GetKeyDown(KeyCode.P) && progressMenu.activeSelf == true)
+        else if(Input.GetKeyDown(KeyCode.Tab) && progressMenu.activeSelf == true)
         {
             progressMenu.SetActive(false);
             cameraMove.GetComponent<CameraMovement>().enabled = true;
